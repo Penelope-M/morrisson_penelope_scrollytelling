@@ -12,17 +12,35 @@ font-family: 'IM Fell English SC', serif;*/
     --white: #ffffff;
    /* --textstyle: font-family: 'Poppins', sans-serif;*/
 }
-  h1{ 
+  header h1{ 
     font-family: 'Amatic SC', cursive;
     color: var(--red);
     text-align:center;
-   
+    font-size: 6rem;
+
   }
 
-  p{ 
+   .explication{ 
     font-family: 'Schoolbell', cursive;
     color: var(--white);
     text-align:center;
+    font-size: 1.5rem;
+    padding-top: 2vh;
+    
+  } 
+  .fleche{ 
+    font-family: 'Schoolbell', cursive;
+    color: var(--white);
+    text-align:center;
+    padding-top: 8vh;
+}
+  .indicator{ 
+    font-family: 'Schoolbell', cursive;
+    color: var(--white);
+    text-align:start;
+    font: size 11px; 
+    
+    
   } 
    /*https://tim-montmorency.com/timdoc/582-424MO/projet-scrollytelling/p2-2a/#requis-css*/ 
   body{ 
@@ -37,10 +55,13 @@ font-family: 'IM Fell English SC', serif;*/
 
   header{ 
     background-image: url("/img/img_arriere_plan/1.bureau_background.png");
-    width: 100vw;
-    height: 100vh;
-    background-size:cover;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    width:100%;
+    height: auto;
    
+    background-repeat: no-repeat;
+
+    background-size:cover;
+    padding-top: 30vh;
+    padding-left: 12vw;
+    padding-right: 12vw;
   }
