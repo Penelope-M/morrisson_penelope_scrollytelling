@@ -1,6 +1,6 @@
 # Projet Scrollytelling: Kani
 
-## Projet scolaire dans le cadre du cours : [Optimisation Web - Projet Scrollytelling ](https://tim-montmorency.com/timdoc/582-424MO/projet-scrollytelling/ "titre de lien optionnel").
+## Projet scolaire dans le cadre du cours : [Optimisation Web - Projet Scrollytelling ](https://tim-montmorency.com/timdoc/582-424MO/projet-scrollytelling/ "titre de lien optionnel")
 
 ## Conception :
 - Pénélope Morrisson
@@ -10,4 +10,9 @@
 - Pénélope Morrisson
 
 ## Technologies:
-- Pénélope Morrisson
+- HTML
+- CSS 
+- JavaScript
+- [Gsap](https://greensock.com/get-started/#transformShorthand/)
+- [Plugiciel_ScrollTrigger](https://greensock.com/)
+[test](https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js)
