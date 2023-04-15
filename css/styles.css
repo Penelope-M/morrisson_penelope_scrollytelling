@@ -1,0 +1,20 @@
+/*font-family: 'Schoolbell', cursive;
+font-family: 'Amatic SC', cursive;
+font-family: 'IM Fell English SC', serif;*/
+
+  @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=IM+Fell+English+SC&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+
+  h1{ 
+    font-family: 'Amatic SC', cursive;
+     ;
+  }
+
+  p{ 
+    font-family: 'Schoolbell', cursive;
+     ;
+  }  
+  body{ 
+    background-image: url("/img/img_arriere_plan/fond_bureau.png")
+     ;
+  }
