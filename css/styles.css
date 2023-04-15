@@ -29,10 +29,16 @@ font-family: 'IM Fell English SC', serif;*/
     
   } 
   .fleche{ 
-    font-family: 'Schoolbell', cursive;
-    color: var(--white);
+    
     text-align:center;
+    padding-bottom:8vh ;
     padding-top: 8vh;
+   
+}
+lord-icon{ 
+    width:100px;
+    height: 100px;
+            
 }
   .indicator{ 
     font-family: 'Schoolbell', cursive;
@@ -46,6 +52,7 @@ font-family: 'IM Fell English SC', serif;*/
   body{ 
     background-color: var(--black);
     overflow-y: hidden;
+
   }
 
   main{ 
@@ -55,8 +62,8 @@ font-family: 'IM Fell English SC', serif;*/
 
   header{ 
     background-image: url("/img/img_arriere_plan/1.bureau_background.png");
-    width:100%;
-    height: auto;
+    width:auto;
+    height:100%;
    
     background-repeat: no-repeat;
 
@@ -64,4 +71,8 @@ font-family: 'IM Fell English SC', serif;*/
     padding-top: 30vh;
     padding-left: 12vw;
     padding-right: 12vw;
+  }
+  section{ 
+    width:100vw;
+    height: 100vh;
   }
