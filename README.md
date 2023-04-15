@@ -15,4 +15,3 @@
 - JavaScript
 - [Gsap](https://greensock.com/get-started/#transformShorthand/)
 - [Plugiciel_ScrollTrigger](https://greensock.com/)
-[test](https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js) 
