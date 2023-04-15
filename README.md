@@ -1,6 +1,6 @@
 # Projet scrollytelling: Kani
 
-## Projet scolaire dans le cadre du cours : Optimisation Web pour le projet scrolltelling [Lien](https://tim-montmorency.com/timdoc/582-424MO/projet-scrollytelling/ "titre de lien optionnel").
+## Projet scolaire dans le cadre du cours : [Optimisation Web - Projet Scrollytelling ](https://tim-montmorency.com/timdoc/582-424MO/projet-scrollytelling/ "titre de lien optionnel").
 
 ## Conception :
 - Pénélope Morrisson
