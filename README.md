@@ -13,5 +13,5 @@
 - HTML
 - CSS 
 - JavaScript
-- [Gsap](https://greensock.com/get-started/#transformShorthand/)
+- [GSAP](https://greensock.com/get-started/#transformShorthand/)
 - [Plugiciel_ScrollTrigger](https://greensock.com/)
