@@ -5,16 +5,26 @@ font-family: 'IM Fell English SC', serif;*/
   @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=IM+Fell+English+SC&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
 
+  :root {
+    --black: #000000;
+    --gris: #A29B9B;
+    --red: #B60B0B;
+    --white: #ffffff;
+   /* --textstyle: font-family: 'Poppins', sans-serif;*/
+}
   h1{ 
     font-family: 'Amatic SC', cursive;
+    color: var(--red)
      ;
   }
 
   p{ 
     font-family: 'Schoolbell', cursive;
+    color: var(--white)
      ;
   }  
   body{ 
-    background-image: url("/img/img_arriere_plan/fond_bureau.png")
-     ;
+    background-image: url("/img/img_arriere_plan/fond_bureau.png");
+    width: 5760px;
+    overflow-y: hidden;
   }
