@@ -1,2 +1,44 @@
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(MotionPathPlugin)
+gsap.registerPlugin(GSDevTools);
+/*const play = document.querySelector('.fleche');
+
+play.addEventListener('hover', () => {
+  gsap.to('.fleche', { x: '400%' }) 
+});*/
+
+/*gsap.set(".massiveImage",{backgroundImage: `url("/img/img_arriere_plan/fond_bureau.png")`})
+gsap.to(".massiveImage", {
+  xPercent: -100, 
+  x: () => innerWidth,
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".massiveImage",
+    start: "top top",
+    end: () => innerWidth * 3,
+    scrub: true,
+    pin: true,
+    invalidateOnRefresh: true,
+    anticipatePin: 1
+  }
+});*/
+let panels = gsap.utils.toArray(".container > .chapitre");
+let subPanels = gsap.utils.toArray(".chapitre", panels[2]);
+
+let tl = gsap.timeline();
+tl.to(panels, {
+    xPercent: -100 * 2,
+    ease: "none"
+  });
+  
+  tl.to(subPanels, {
+    yPercent: -100 * (subPanels.length - 1),
+    ease: "none"
+  });
+  
+  tl.to(panels, {
+    xPercent: -100 * (panels.length - 1),
+    ease: "none"
+  });
+  
+  GSDevTools.create();
