@@ -58,13 +58,4 @@ ScrollTrigger.create({
   }
 });*/
 
-/*
-gsap.to('.content', {
-  scrollTrigger: {
-    markers: true,
-    trigger: '.content',
-  },
-  x: '100%',
-  duration: 2,
-});*/
-  
+/**/
