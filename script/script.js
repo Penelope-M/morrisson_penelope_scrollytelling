@@ -22,7 +22,7 @@ gsap.to(".massiveImage", {
     anticipatePin: 1
   }
 });*/
-let panels = gsap.utils.toArray(".container > .chapitre");
+/*let panels = gsap.utils.toArray(".container > .chapitre");
 let subPanels = gsap.utils.toArray(".chapitre", panels[2]);
 
 let tl = gsap.timeline();
@@ -42,3 +42,29 @@ tl.to(panels, {
   });
   
   GSDevTools.create();
+
+
+const header = document.querySelector('header');
+
+ScrollTrigger.create({
+  start: 'top',
+  end: 'bottom',
+  onUpdate: (self) => {
+    if (self.direction === -1) {
+      header.classList.add('visible');
+    } else {
+      header.classList.remove('visible');
+    }
+  }
+});*/
+
+/*
+gsap.to('.content', {
+  scrollTrigger: {
+    markers: true,
+    trigger: '.content',
+  },
+  x: '100%',
+  duration: 2,
+});*/
+  
