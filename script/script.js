@@ -59,3 +59,13 @@ ScrollTrigger.create({
 });*/
 
 /**/
+const body = document.querySelector("body");
+let timer;
+
+window.addEventListener("scroll", function() {
+  body.classList.add("is-scrolling");
+  clearTimeout(timer);
+  timer = setTimeout(function(){
+    body.classList.remove("is-scrolling");
+  }, 100);
+});
