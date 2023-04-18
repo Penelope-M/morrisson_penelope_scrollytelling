@@ -171,8 +171,8 @@ main{
 .lapin {
   /* Styles pour la dimension */
   width: 335px;
-height: 595px;
- /* aspect-ratio: 67/170;*/
+height: 595px; 
+ /* aspect-ratio: 67/170;**/
 aspect-ratio: 10710/4221;
 
   /* Styles pour l'image d'arrière plan */
