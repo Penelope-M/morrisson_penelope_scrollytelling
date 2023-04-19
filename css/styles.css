@@ -169,15 +169,17 @@ main{
 
 
 .lapin {
-  /* Styles pour la dimension 
-  width: 335px;
-height: 595px; */
- /* aspect-ratio: 67/170;**/
-aspect-ratio: 1071/620;
-
+   
+  width: 40vw;/*
+height: 595px; 
+ aspect-ratio: 67/170;*/
+ border: 1px solid red;
+ /*aspect-ratio: 1071/603;*/
+ background-size: 1000% 100%;
+aspect-ratio: 1071/603;
   /* Styles pour l'image d'arrière plan */
-   background-image: url('/img/img_personnages/sprite_sheet_lapin.png');
-  background-repeat: no-repeat;
+   background-image: url('/img/img_personnages/sprite_sheet_lapin3.png');
+  
 
   /* Styles pour l'animation */
   animation-name: marche;
@@ -185,12 +187,12 @@ aspect-ratio: 1071/620;
   animation-iteration-count: infinite;
   animation-timing-function: steps(10);
   /* Note: La feuille de sprite contient 70 images-clés, donc 70 steps */
-  animation-play-state: paused;
+  
 }
-@keyframes marche {
+ @keyframes marche {
   from { background-position: 0 0; }
-  to { background-position: -10710px 0; } 
-  /* Note: 70 images x 600px = 24500px */
+  to { background-position: -1000% 0; } 
+ /* Note: 70 images x 600px = 24500px */
 }
 
 
@@ -201,3 +203,6 @@ aspect-ratio: 1071/620;
   margin: 0 auto;
 }
 
+.is-scrolling .lapin{
+  animation-play-state: running;
+}
