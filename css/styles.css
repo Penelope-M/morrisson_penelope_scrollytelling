@@ -187,12 +187,13 @@ aspect-ratio: 1071/603;
   animation-iteration-count: infinite;
   animation-timing-function: steps(10);
   /* Note: La feuille de sprite contient 70 images-clés, donc 70 steps */
-  
+  animation-play-state: paused;
 }
  @keyframes marche {
   from { background-position: 0 0; }
   to { background-position: -1000% 0; } 
  /* Note: 70 images x 600px = 24500px */
+ 
 }
 
 
