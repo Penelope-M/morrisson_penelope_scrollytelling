@@ -143,8 +143,8 @@ main{
   
 }
 
-.section {
-  width: 100vw;
+section {
+width: 100vw;
   height: 100vh;
   scroll-snap-align: start;
   position: relative;
@@ -164,8 +164,7 @@ main{
 
 .chapitre
 {
-  width: 100vw;
-  height: 100vh;
+  
   border: 1px solid red;
  
 }
@@ -210,9 +209,41 @@ aspect-ratio: 1071/603;
 .is-scrolling .lapin{
   animation-play-state: running;
 }
-  #deux.pencil{
+  #deux img{
   position:absolute;
-
+  top: 70%; 
+  left: 45%; 
+  transform: translate(-10%, -20%);
+}
+#quatre img{
+  position:absolute;
+  top: 48%; 
+  left: 45%; 
+  transform: translate(-10%, -20%);
+}
+#cinq img{
+  position:absolute;
+  top: 73%; 
+  left: 45%; 
+  transform: translate(-10%, -20%);
+}
+#fin img.fenetre{
+  position:absolute;
+  top: 50%; 
+  left: 25%; 
+  transform: translate(-5%, -45%);
+  max-width: 100%;
+  width: 50%;
+  height: auto;
+}
+#fin img.ciel{
+  position:absolute;
+  top: 50%; 
+  left: 40%; 
+  transform: translate(-20%, -40%);
+  max-width: 100%;
+  width: 50%;
+  height: auto;
 }
 
  
