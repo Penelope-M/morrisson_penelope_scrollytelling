@@ -126,6 +126,7 @@ header {
   scroll-snap-type: x mandatory;
   width: 100%;
   min-width: 5760px;
+  /*background-size:auto;*/
 }
 main{ 
  
@@ -146,6 +147,7 @@ main{
   width: 100vw;
   height: 100vh;
   scroll-snap-align: start;
+  position: relative;
 }
 .header-content {
   max-width: 800px;
@@ -164,7 +166,8 @@ main{
 {
   width: 100vw;
   height: 100vh;
-  
+  border: 1px solid red;
+ 
 }
 
 
@@ -207,3 +210,9 @@ aspect-ratio: 1071/603;
 .is-scrolling .lapin{
   animation-play-state: running;
 }
+  #deux.pencil{
+  position:absolute;
+
+}
+
+ 
