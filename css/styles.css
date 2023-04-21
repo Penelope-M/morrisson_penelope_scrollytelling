@@ -90,11 +90,12 @@ lord-icon{
   }
   
  /*url("/img/img_arriere_plan/1.bureau_background.png")  background-size:cover;*/
- /*.container{ 
-  width: 7680px;
+ /**/
+ #container{ 
+  width: 700vw;
   height: 100vh;
   display: flex;
-}*/
+}
 body {
   overflow-y: hidden;
   overflow-x: scroll;
@@ -123,10 +124,10 @@ header {
 .content {
   display: flex;
   flex-wrap: nowrap;
-  scroll-snap-type: x mandatory;
-  width: 100%;
-  min-width: 5760px;
-  /*background-size:auto;*/
+  /*scroll-snap-type: x mandatory;*/
+  width: 600vw;
+   /*min-width: 5760px;
+ background-size:auto;*/
 }
 main{ 
  
@@ -146,7 +147,7 @@ main{
 section {
 width: 100vw;
   height: 100vh;
-  scroll-snap-align: start;
+  /*scroll-snap-align: start;*/
   position: relative;
 }
 .header-content {
@@ -197,7 +198,33 @@ aspect-ratio: 1071/603;
  /* Note: 70 images x 600px = 24500px */
  
 }
+.main {
+   
+  width: 40vw;/*
+height: 595px; 
+ aspect-ratio: 67/170;*/
+ border: 1px solid red;
+ /*aspect-ratio: 1071/603;*/
+ background-size: 1000% 100%;
+aspect-ratio: 49343/566;
+  /* Styles pour l'image d'arrière plan */
+   background-image: url('/img/img_personnages/output-onlinegiftools.png');
+  
 
+  /* Styles pour l'animation */
+  animation-name: marche;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(45);
+  /* Note: La feuille de sprite contient 70 images-clés, donc 70 steps */
+ /* animation-play-state: paused;*/
+}
+ @keyframes marche {
+  from { background-position: 0 0; }
+  to { background-position: -1000% 0; } 
+ /* Note: 70 images x 600px = 24500px */
+ 
+}
 
 
 
@@ -221,10 +248,16 @@ aspect-ratio: 1071/603;
   left: 45%; 
   transform: translate(-10%, -20%);
 }
-#cinq img{
+#cinq img.avion_back{
   position:absolute;
   top: 73%; 
   left: 45%; 
+  transform: translate(-10%, -20%);
+}
+#cinq img.avion_front{
+  position:absolute;
+  top: 76%; 
+  left: 50%; 
   transform: translate(-10%, -20%);
 }
 #fin img.fenetre{
@@ -232,18 +265,20 @@ aspect-ratio: 1071/603;
   top: 30%; 
   left: 52%; 
   transform: translate(-5%, -45%);
-  max-width: 100%;
+ 
   width: 40%;
-  height: auto;
+  aspect-ratio: 1/2;
 }
 #fin img.ciel{
   position:absolute;
   top: 28%; 
   left: 58%; 
   transform: translate(-20%, -40%);
-  max-width: 100%;
-  width: 38%;
-  height: 51%;
+
+  width: 40%;
+  aspect-ratio: 1/2;
+  object-fit:cover;
+
 }
 
  
