@@ -69,3 +69,15 @@ window.addEventListener("scroll", function() {
     body.classList.remove("is-scrolling");
   }, 100);
 });
+
+gsap.to("#section-parallax", {
+  backgroundPosition: "50% 100%",
+  ease: "none",
+  scrollTrigger: {
+      trigger: "#section-parallax",
+      start: "top bottom",
+      end: "bottom top",
+      scrub: true,
+      markers: true
+  }
+});

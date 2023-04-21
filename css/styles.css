@@ -229,21 +229,21 @@ aspect-ratio: 1071/603;
 }
 #fin img.fenetre{
   position:absolute;
-  top: 50%; 
-  left: 25%; 
+  top: 30%; 
+  left: 52%; 
   transform: translate(-5%, -45%);
   max-width: 100%;
-  width: 50%;
+  width: 40%;
   height: auto;
 }
 #fin img.ciel{
   position:absolute;
-  top: 50%; 
-  left: 40%; 
+  top: 28%; 
+  left: 58%; 
   transform: translate(-20%, -40%);
   max-width: 100%;
-  width: 50%;
-  height: auto;
+  width: 38%;
+  height: 51%;
 }
 
  
