@@ -94,6 +94,7 @@ lord-icon{
  #container{ 
   width: 700vw;
   height: 100vh;
+  justify-content: flex-start;
   display: flex;
 }
 body {
@@ -103,9 +104,7 @@ body {
 }
 
 header {
-  position: absolute;
-  top: 0;
-  left: 0;
+ 
   width: 100%;
   height: 100vh;
   background-image: url("/img/img_arriere_plan/1.bureau_background.png");
@@ -132,9 +131,6 @@ header {
 main{ 
  
     position: relative;
-    top: 0;
-    left: 100%;
-    width: calc(100% - 100vw);
     height: 100vh;
     background-image: url("/img/img_arriere_plan/fond_bureau.png");
     background-size: cover;
@@ -262,22 +258,20 @@ aspect-ratio: 49343/566;
 }
 #fin img.fenetre{
   position:absolute;
-  top: 30%; 
+  top: 40%; 
   left: 52%; 
   transform: translate(-5%, -45%);
- 
   width: 40%;
   aspect-ratio: 1/2;
 }
 #fin img.ciel{
   position:absolute;
-  top: 28%; 
+  top: 34%; 
   left: 58%; 
   transform: translate(-20%, -40%);
-
-  width: 40%;
+  width: 39%;
   aspect-ratio: 1/2;
-  object-fit:cover;
+  object-fit:contain;
 
 }
 
