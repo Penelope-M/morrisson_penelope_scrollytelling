@@ -247,3 +247,14 @@ aspect-ratio: 1007/566;
   object-fit:contain;
 }
  
+
+
+
+.chapitre p{ 
+  font-family: 'Schoolbell', cursive;
+  color: var(--white);
+  text-align:justify;
+  font-size: 1rem;
+ 
+  margin: 3vw;
+}
