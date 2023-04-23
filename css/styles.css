@@ -201,28 +201,31 @@ height: 595px;
  aspect-ratio: 67/170;*/
  border: 1px solid red;
  /*aspect-ratio: 1071/603;*/
- background-size: 1000% 100%;
-aspect-ratio: 49343/566;
+ background-size: 4900% 100%;
+/*aspect-ratio: 49343/566;*/
+aspect-ratio: 1007/566;
   /* Styles pour l'image d'arrière plan */
    background-image: url('/img/img_personnages/output-onlinegiftools.png');
   
 
   /* Styles pour l'animation */
   animation-name: marche;
-  animation-duration: 0.8s;
+  animation-duration: 1.5s;
   animation-iteration-count: infinite;
-  animation-timing-function: steps(45);
+  animation-timing-function: steps(49);
   /* Note: La feuille de sprite contient 70 images-clés, donc 70 steps */
  /* animation-play-state: paused;*/
 }
  @keyframes marche {
   from { background-position: 0 0; }
-  to { background-position: -1000% 0; } 
+  to { background-position: 4900% 0; } 
  /* Note: 70 images x 600px = 24500px */
  
 }
 
-
+.main {
+  margin: 0 auto;
+}
 
 
 .lapin {
