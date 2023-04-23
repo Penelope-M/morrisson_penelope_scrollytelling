@@ -56,41 +56,7 @@ lord-icon{
     font-size: 13px;
     margin-bottom: 20px;
     
-  } /*
-   /*https://tim-montmorency.com/timdoc/582-424MO/projet-scrollytelling/p2-2a/#requis-css*/ 
-  /*body{ 
-    background-color: var(--black);
-    overflow-x: scroll;
-    overflow-y: hidden;
-  max-height:100vh;
-  }
-
-  main{ 
-    background-image: url("/img/img_arriere_plan/fond_bureau.png");
-    width: 5760px;
-  
-  }
-
-  header{ 
-    
-    width:100vw;
-    height:auto;
-    background-image: url("/img/img_arriere_plan/1.bureau_background.png");
-    background-repeat: no-repeat;
-    background-size:cover;
-
-    padding-left: 5vw;
-    padding-right: 5vw;
-    
-  }
-   .chapitre{ 
-    height: 100%;
-    width: 5760px;
-  
-  }
-  
- /*url("/img/img_arriere_plan/1.bureau_background.png")  background-size:cover;*/
- /**/
+  } 
  #container{ 
   width: 700vw;
   height: 100vh;
@@ -123,10 +89,7 @@ header {
 .content {
   display: flex;
   flex-wrap: nowrap;
-  /*scroll-snap-type: x mandatory;*/
   width: 600vw;
-   /*min-width: 5760px;
- background-size:auto;*/
 }
 main{ 
  
@@ -143,7 +106,6 @@ main{
 section {
 width: 100vw;
   height: 100vh;
-  /*scroll-snap-align: start;*/
   position: relative;
 }
 .header-content {
@@ -168,55 +130,41 @@ width: 100vw;
 
 
 .lapin {  
-  width: 50vw;/*
-height: 595px; 
- aspect-ratio: 67/170;*/
+  width: 40vw; 
  border: 1px solid red;
- /*aspect-ratio: 1071/603;*/
  background-size: 1000% 100%;
 aspect-ratio: 1071/603;
   /* Styles pour l'image d'arrière plan */
    background-image: url('/img/img_personnages/sprite_sheet_lapin3.png');
-  
-
   /* Styles pour l'animation */
   animation-name: marche;
   animation-duration: 0.8s;
   animation-iteration-count: infinite;
   animation-timing-function: steps(10);
-  /* Note: La feuille de sprite contient 70 images-clés, donc 70 steps */
   animation-play-state: paused;
 }
  @keyframes marche {
   from { background-position: 0 0; }
   to { background-position: -1000% 0; } 
- /* Note: 70 images x 600px = 24500px */
- 
 }
 .main {
    
-  width: 55vw;/*
-height: 595px; 
- aspect-ratio: 67/170;*/
+  width: 60vw;
  border: 1px solid red;
- /*aspect-ratio: 1071/603;*/
  background-size: 4900% 100%;
-/*aspect-ratio: 49343/566;*/
 aspect-ratio: 1007/566;
   /* Styles pour l'image d'arrière plan */
    background-image: url('/img/img_personnages/output-onlinegiftools.png');
-  
-
   /* Styles pour l'animation */
-  animation-name: marche;
+  animation-name: flote;
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
   animation-timing-function: steps(49);
   animation-play-state: paused;
   /* Note: La feuille de sprite contient 70 images-clés, donc 70 steps */
- /* animation-play-state: paused;*/
+  animation-play-state: paused;
 }
- @keyframes marche {
+ @keyframes flote {
   from { background-position: 0 0; }
   to { background-position: 4900% 0; } 
  /* Note: 70 images x 600px = 24500px */
@@ -229,7 +177,10 @@ aspect-ratio: 1007/566;
 
 
 .lapin {
-  margin: 0 auto;
+  position: absolute;
+  top: 65vh;
+  left: 40vw;
+  transform: translate(-10%, -20%);
 }
 
 .is-scrolling .lapin{
@@ -240,26 +191,29 @@ aspect-ratio: 1007/566;
 }
   #deux img{
   position:absolute;
-  top: 76vh; 
+  top: 80vh; 
   left: 45vw; 
   transform: translate(-10%, -20%);
 }
 #quatre img{
   position:absolute;
-  top: 48vh; 
+  width: 60vw;
+  top: 45vh; 
   left: 45vw; 
   transform: translate(-10%, -20%);
 }
 #cinq img.avion_back{
+  width: 40vw;
   position:absolute;
-  top: 73vh; 
-  left: 45vw; 
+  top: 75vh; 
+  left: 49vw; 
   transform: translate(-10%, -20%);
 }
 #cinq img.avion_front{
   position:absolute;
-  top: 76vh; 
-  left: 50vw; 
+  width: 38vw;
+  top: 78vh; 
+  left: 51vw; 
   transform: translate(-10%, -20%);
 }
 #fin img.fenetre{
@@ -267,18 +221,22 @@ aspect-ratio: 1007/566;
   top: 35vh; 
   left: 52vw; 
   transform: translate(-5%, -45%);
-  width: 39vw;
+  width: 36vw;
   aspect-ratio: 1/2;
+
 }
 #fin img.ciel{
   position:absolute;
   top: 30vh; 
   left: 58vw; 
-  transform: translate(-20%, -40%);
-  width: 38vw;
+  transform: translate(-20%, -39%);
+  width: 35vw;
   aspect-ratio: 1/2;
   object-fit:contain;
-
+  
 }
 
+#fin .all-img-six{
+  position:relative;
+}
  
