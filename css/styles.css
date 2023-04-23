@@ -191,16 +191,19 @@ aspect-ratio: 1007/566;
 }
   #deux img{
   position:absolute;
-  top: 80vh; 
+  top: 70vh; 
   left: 45vw; 
   transform: translate(-10%, -20%);
+  border: 1px solid red;
+  width: 50vw;
 }
 #quatre img{
   position:absolute;
   width: 60vw;
-  top: 45vh; 
+  top: 50vh; 
   left: 45vw; 
   transform: translate(-10%, -20%);
+  border: 1px solid red;
 }
 #cinq img.avion_back{
   width: 40vw;
@@ -208,35 +211,39 @@ aspect-ratio: 1007/566;
   top: 75vh; 
   left: 49vw; 
   transform: translate(-10%, -20%);
+  border: 1px solid red;
 }
 #cinq img.avion_front{
   position:absolute;
   width: 38vw;
-  top: 78vh; 
+  top: 77vh; 
   left: 51vw; 
   transform: translate(-10%, -20%);
+  border: 1px solid red;
 }
 #fin img.fenetre{
   position:absolute;
-  top: 35vh; 
+  top: 32vh; 
   left: 52vw; 
   transform: translate(-5%, -45%);
-  width: 36vw;
+  width: 33vw;
   aspect-ratio: 1/2;
-
+  border: 1px solid red; 
 }
 #fin img.ciel{
   position:absolute;
-  top: 30vh; 
-  left: 58vw; 
+  top: 29vh; 
+  left: 57vw; 
   transform: translate(-20%, -39%);
-  width: 35vw;
+  width: 32vw;
   aspect-ratio: 1/2;
   object-fit:contain;
-  
+  border: 1px solid rgb(4, 0, 255);
 }
 
 #fin .all-img-six{
-  position:relative;
+  position:absolute;
+  top: 5vh;
+  object-fit:contain;
 }
  
