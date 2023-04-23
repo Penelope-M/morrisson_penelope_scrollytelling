@@ -167,9 +167,8 @@ width: 100vw;
 }
 
 
-.lapin {
-   
-  width: 40vw;/*
+.lapin {  
+  width: 50vw;/*
 height: 595px; 
  aspect-ratio: 67/170;*/
  border: 1px solid red;
@@ -196,7 +195,7 @@ aspect-ratio: 1071/603;
 }
 .main {
    
-  width: 40vw;/*
+  width: 55vw;/*
 height: 595px; 
  aspect-ratio: 67/170;*/
  border: 1px solid red;
@@ -213,6 +212,7 @@ aspect-ratio: 1007/566;
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
   animation-timing-function: steps(49);
+  animation-play-state: paused;
   /* Note: La feuille de sprite contient 70 images-clés, donc 70 steps */
  /* animation-play-state: paused;*/
 }
@@ -223,9 +223,9 @@ aspect-ratio: 1007/566;
  
 }
 
-.main {
+/*.main {
   margin: 0 auto;
-}
+}*/
 
 
 .lapin {
@@ -235,44 +235,47 @@ aspect-ratio: 1007/566;
 .is-scrolling .lapin{
   animation-play-state: running;
 }
+.is-scrolling .main{
+  animation-play-state: running;
+}
   #deux img{
   position:absolute;
-  top: 70%; 
-  left: 45%; 
+  top: 76vh; 
+  left: 45vw; 
   transform: translate(-10%, -20%);
 }
 #quatre img{
   position:absolute;
-  top: 48%; 
-  left: 45%; 
+  top: 48vh; 
+  left: 45vw; 
   transform: translate(-10%, -20%);
 }
 #cinq img.avion_back{
   position:absolute;
-  top: 73%; 
-  left: 45%; 
+  top: 73vh; 
+  left: 45vw; 
   transform: translate(-10%, -20%);
 }
 #cinq img.avion_front{
   position:absolute;
-  top: 76%; 
-  left: 50%; 
+  top: 76vh; 
+  left: 50vw; 
   transform: translate(-10%, -20%);
 }
 #fin img.fenetre{
   position:absolute;
-  top: 40%; 
-  left: 52%; 
+  top: 35vh; 
+  left: 52vw; 
   transform: translate(-5%, -45%);
-  width: 40%;
+  width: 39vw;
   aspect-ratio: 1/2;
 }
 #fin img.ciel{
   position:absolute;
-  top: 34%; 
-  left: 58%; 
+  top: 30vh; 
+  left: 58vw; 
   transform: translate(-20%, -40%);
-  width: 39%;
+  width: 38vw;
   aspect-ratio: 1/2;
   object-fit:contain;
 

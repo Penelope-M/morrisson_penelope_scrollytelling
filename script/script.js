@@ -70,7 +70,7 @@ window.addEventListener("scroll", function() {
   }, 100);
 });
 
-gsap.to("#section-parallax", {
+/*gsap.to("#section-parallax", {
   backgroundPosition: "50% 100%",
   ease: "none",
   scrollTrigger: {
@@ -80,4 +80,4 @@ gsap.to("#section-parallax", {
       scrub: true,
       markers: true
   }
-});
+});*/
