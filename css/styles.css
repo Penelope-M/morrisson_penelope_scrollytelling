@@ -191,36 +191,35 @@ aspect-ratio: 1007/566;
 }
   #deux img{
   position:absolute;
-  top: 70vh; 
-  left: 45vw; 
+  bottom: 15vh; 
+  left: 50vw; 
   transform: translate(-10%, -20%);
   border: 1px solid red;
   width: 50vw;
 }
 #quatre img{
   position:absolute;
-  width: 60vw;
-  top: 50vh; 
+  /*width: 60vw;*/
+  bottom: 5vh; 
   left: 45vw; 
   transform: translate(-10%, -20%);
-  border: 1px solid red;
+  border: 1px solid green;
 }
-#cinq img.avion_back{
+/*#cinq img.avion_back{
   width: 40vw;
   position:absolute;
-  top: 75vh; 
+  top: 76vh; 
   left: 49vw; 
   transform: translate(-10%, -20%);
-  border: 1px solid red;
-}
+  border: 1px solid yellow;
+}*/
 #cinq img.avion_front{
-  position:absolute;
-  width: 38vw;
-  top: 77vh; 
-  left: 51vw; 
-  transform: translate(-10%, -20%);
-  border: 1px solid red;
+  width: 37vw;
+  transform: translate(22%, -91%);
+  /*border: 1px solid rgb(51, 163, 6);*/
+ 
 }
+
 #fin img.fenetre{
   position:absolute;
   top: 32vh; 
@@ -246,7 +245,14 @@ aspect-ratio: 1007/566;
   top: 5vh;
   object-fit:contain;
 }
- 
+#cinq .all-img-cinq{
+  width: 45vw;
+  position:absolute;
+  top: 76vh; 
+  left: 49vw; 
+  transform: translate(-10%, -20%);
+  border: 1px solid yellow;
+}
 
 
 
@@ -255,6 +261,5 @@ aspect-ratio: 1007/566;
   color: var(--white);
   text-align:justify;
   font-size: 1rem;
- 
-  margin: 3vw;
+  margin: 4vw;
 }
