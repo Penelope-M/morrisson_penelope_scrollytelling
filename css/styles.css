@@ -32,14 +32,16 @@ font-family: 'IM Fell English SC', serif;*/
     }
 
   .fleche{ 
-    margin-top: 30px;
-    text-align:center;   
-      
+  /*  margin-top: 30px;
+    text-align:center;   */
+    width: 100px;
+    height: 100px;
+    position: relative;
 }
-header .fleche a {
+/*header .fleche a {
   display: inline-block;
   margin: 0 auto;
-}
+}*/
 lord-icon{ 
     width:100px;
     height: 100px;
