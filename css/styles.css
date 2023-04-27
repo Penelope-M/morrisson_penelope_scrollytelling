@@ -221,29 +221,27 @@ aspect-ratio: 1007/566;
 }
 
 #fin img.fenetre{
-  position:absolute;
-  top: 32vh; 
-  left: 52vw; 
-  transform: translate(-5%, -45%);
-  width: 33vw;
-  aspect-ratio: 1/2;
+ 
+  
+  transform: translate(-5%, -35%);
+  width: 27vw;
+
   border: 1px solid red; 
 }
 #fin img.ciel{
-  position:absolute;
-  top: 29vh; 
-  left: 57vw; 
-  transform: translate(-20%, -39%);
-  width: 32vw;
-  aspect-ratio: 1/2;
+
+  
+  transform: translate(100%, -35%);
+  width: 25vw;
+  
   object-fit:contain;
   border: 1px solid rgb(4, 0, 255);
 }
 
 #fin .all-img-six{
   position:absolute;
-  top: 5vh;
-  object-fit:contain;
+  left: 39vh;
+  top: 36vh;
 }
 #cinq .all-img-cinq{
   width: 45vw;
