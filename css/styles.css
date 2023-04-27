@@ -33,19 +33,29 @@ font-family: 'IM Fell English SC', serif;*/
 
   .fleche{ 
   /*  margin-top: 30px;
-    text-align:center;   */
+    text-align:center;   
     width: 100px;
     height: 100px;
-    position: relative;
+    position: relative;*/
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 /*header .fleche a {
   display: inline-block;
   margin: 0 auto;
-}*/
+}
 lord-icon{ 
     width:100px;
     height: 100px;
             
+}*/
+.arrow {
+  position: relative;
+  width: 100px;
+  height: 100px;
 }
   .indicator{ 
     font-family: 'Schoolbell', cursive;

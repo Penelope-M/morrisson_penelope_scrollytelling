@@ -1,5 +1,5 @@
 gsap.registerPlugin(ScrollTrigger);
-gsap.registerPlugin(MotionPathPlugin)
+gsap.registerPlugin(MotionPathPlugin);
 gsap.registerPlugin(GSDevTools);
 
 
@@ -25,10 +25,19 @@ window.addEventListener("scroll", function() {
       scrub: true,
       markers: true
   }
-});*/
+});
 gsap.to('.no2', {
   motionPath: '#ligne',
   duration: 4,
   repeat: -1,
   yoyo: true,
-})
+})*/
+
+gsap.to('.arrow', {
+  duration: 2,
+  x: '50%',
+  ease: 'power2.inOut',
+  repeat: -1,
+  yoyo: true
+});
+
