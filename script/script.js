@@ -73,3 +73,11 @@ gsap.to('.boulemini', {
   repeat: -1,
   yoyo:true,
 });
+gsap.to('.pencil', {
+  duration: 2,
+  transformOrigin:'center ',
+ rotation:-2,
+ ease: 'bonce.inOut',
+  repeat: -1,
+  yoyo:true,
+});
