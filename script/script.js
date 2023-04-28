@@ -1,6 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
-gsap.registerPlugin(MotionPathPlugin);
-gsap.registerPlugin(GSDevTools);
+/*gsap.registerPlugin(MotionPathPlugin);
+gsap.registerPlugin(GSDevTools);*/
 
 
 /**/
