@@ -253,7 +253,15 @@ aspect-ratio: 1007/566;
   object-fit:contain;
   border: 1px solid rgb(4, 0, 255);
 }
+#fin img.lune{
 
+  
+  transform: translate(-140%, -210%);
+  width: 8vw;
+  max-width: 280px;
+  
+  /*border: 1px solid rgb(217, 255, 0);*/
+}
 #fin .all-img-six{
   position:absolute;
   left: 55vh;

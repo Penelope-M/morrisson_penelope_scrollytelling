@@ -41,3 +41,11 @@ gsap.to('.arrow', {
   yoyo: true
 });
 
+gsap.to('.lune', {
+  duration: 2,
+  rotation:20,
+  transformOrigin:'center 5%',
+  ease: 'power1.inOut',
+  repeat: -1,
+  yoyo: true
+});

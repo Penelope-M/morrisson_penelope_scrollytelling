@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 673 678">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f4f4f4;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: #ddd;
+      }
+
+      .cls-3 {
+        fill: #eaeaea;
+      }
+
+      .cls-4 {
+        fill: #efefef;
+      }
+
+      .cls-5 {
+        fill: #d3d3d3;
+      }
+
+      .cls-6 {
+        fill: #bababa;
+      }
+
+      .cls-7 {
+        fill: #f9f9f9;
+      }
+
+      .cls-8 {
+        fill: #dbdbdb;
+      }
+
+      .cls-9 {
+        fill: #d1d1d1;
+      }
+
+      .cls-10 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <polygon class="cls-10" points="118.5 365.5 4.5 409.5 77.5 99.5 130.5 119.5 240.5 69.5 343.25 52.5 418.5 1.5 455.5 67.5 595.5 133.5 575.5 261.5 665.5 370.5 558.5 452.5 504.5 592.5 395.5 664.5 304.5 647.5 237.5 573.5 210.5 673.5 82.5 475.5 118.5 365.5"/>
+  <polygon class="cls-3" points="200.5 427.5 82.5 475.5 210.5 673.5 200.5 427.5"/>
+  <polygon class="cls-10" points="237.5 573.5 323.5 416.5 200.5 427.5 210.5 673.5 237.5 573.5"/>
+  <polygon class="cls-10" points="304.5 647.5 323.5 416.5 237.5 573.5 304.5 647.5"/>
+  <polygon class="cls-5" points="395.5 664.5 427.5 458.5 504.5 592.5 395.5 664.5"/>
+  <polygon class="cls-1" points="323.5 416.5 427.5 458.5 304.5 647.5 323.5 416.5"/>
+  <polygon class="cls-10" points="395.5 664.5 304.5 647.5 427.5 458.5 395.5 664.5"/>
+  <polygon class="cls-8" points="558.5 452.5 427.5 458.5 504.5 592.5 558.5 452.5"/>
+  <polygon class="cls-10" points="575.5 261.5 558.5 452.5 665.5 370.5 575.5 261.5"/>
+  <polygon class="cls-4" points="427.5 281.2 575.5 261.5 558.5 452.5 427.5 281.2"/>
+  <polygon class="cls-2" points="323.5 416.5 427.5 281.2 427.5 458.5 323.5 416.5"/>
+  <polygon class="cls-10" points="558.5 452.5 427.5 458.5 427.5 281.2 558.5 452.5"/>
+  <path class="cls-5" d="m455.5,67.5s-69,118-67,118,207-52,207-52l-140-66Z"/>
+  <polygon class="cls-3" points="343.25 52.5 388.5 185.5 455.5 67.5 343.25 52.5"/>
+  <polygon class="cls-10" points="418.5 1.5 343.25 52.5 455.5 67.5 418.5 1.5"/>
+  <polygon class="cls-3" points="388.5 185.5 575.5 261.5 595.5 133.5 388.5 185.5"/>
+  <polygon class="cls-10" points="427.5 281.2 388.5 185.5 575.5 261.5 427.5 281.2"/>
+  <polygon class="cls-6" points="118.5 365.5 245.5 246.5 323.5 416.5 118.5 365.5"/>
+  <polygon class="cls-5" points="240.5 69.5 245.5 246.5 388.5 185.5 240.5 69.5"/>
+  <polygon class="cls-10" points="427.5 281.2 245.5 246.5 323.5 416.5 427.5 281.2"/>
+  <polygon class="cls-7" points="388.5 185.5 245.5 246.5 427.5 281.2 388.5 185.5"/>
+  <polygon class="cls-10" points="240.5 69.5 343.25 52.5 388.5 185.5 240.5 69.5"/>
+  <polygon class="cls-3" points="130.5 119.5 245.5 246.5 240.5 69.5 130.5 119.5"/>
+  <polygon class="cls-10" points="118.5 365.5 130.5 119.5 245.5 246.5 118.5 365.5"/>
+  <polygon class="cls-10" points="77.5 99.5 118.5 365.5 4.5 409.5 77.5 99.5"/>
+  <polygon class="cls-9" points="130.5 119.5 77.5 99.5 118.5 365.5 130.5 119.5"/>
+  <polygon class="cls-1" points="323.5 416.5 118.5 365.5 82.5 475.5 200.5 427.5 323.5 416.5"/>
+</svg>
