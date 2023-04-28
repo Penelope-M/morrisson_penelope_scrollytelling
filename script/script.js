@@ -58,7 +58,7 @@ gsap.to('.boule', {
   yoyo:true,
 });
 gsap.to('.boulebig', {
-  duration: 4,
+  duration: 4.5,
   rotation:360,
   x: 2800,
   ease: 'bonce.inOut',
