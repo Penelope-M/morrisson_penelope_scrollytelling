@@ -212,6 +212,14 @@ aspect-ratio: 1007/566;
   width: 50vw;
   max-width: 600px;
 }
+#debut img.boulemini{
+  position:absolute;
+  transform: translate(750%, 0%);
+  width: 5vw;
+  max-width: 100px;
+  bottom: 33vh; 
+  /*border: 1px solid rgb(217, 255, 0);*/
+}
 #deux img.boulebig{
   position:absolute;
   transform: translate(-500%, 0%);
