@@ -49,3 +49,11 @@ gsap.to('.lune', {
   repeat: -1,
   yoyo: true
 });
+gsap.to('.boule', {
+  duration: 3,
+  rotation:360,
+  x: 2000,
+  ease: 'power1.inOut',
+  repeat: -1,
+  yoyo:true,
+});

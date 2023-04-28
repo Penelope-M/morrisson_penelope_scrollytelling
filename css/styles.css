@@ -212,6 +212,14 @@ aspect-ratio: 1007/566;
   width: 50vw;
   max-width: 600px;
 }
+#trois img.boule{
+  position:absolute;
+  transform: translate(10%, 10%);
+  width: 9vw;
+  max-width: 110px;
+  bottom: 35vh; 
+  /*border: 1px solid rgb(217, 255, 0);*/
+}
 #quatre img{
   position:absolute;
   /*width: 60vw;*/
@@ -237,16 +245,12 @@ aspect-ratio: 1007/566;
 }
 
 #fin img.fenetre{
- 
-  
   transform: translate(-5%, -35%);
   width: 27vw;
   max-width: 290px;
   border: 1px solid red; 
 }
 #fin img.ciel{
-
-  
   transform: translate(100%, -35%);
   width: 24vw;
   max-width: 280px;
@@ -254,11 +258,9 @@ aspect-ratio: 1007/566;
   border: 1px solid rgb(4, 0, 255);
 }
 #fin img.lune{
-
-  
   transform: translate(-140%, -210%);
   width: 8vw;
-  max-width: 280px;
+  max-width: 100px;
   
   /*border: 1px solid rgb(217, 255, 0);*/
 }
