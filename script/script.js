@@ -66,9 +66,9 @@ gsap.to('.boulebig', {
   yoyo:true,
 });
 gsap.to('.boulemini', {
-  duration: 4.5,
+  duration: 5,
   rotation:360,
-  x: 2500,
+  x: 4800,
   ease: 'none.inOut',
   repeat: -1,
   yoyo:true,
