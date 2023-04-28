@@ -143,6 +143,7 @@ width: 100vw;
 
 .lapin {  
   width: 40vw; 
+  max-width: 550px;
  border: 1px solid red;
  background-size: 1000% 100%;
 aspect-ratio: 1071/603;
@@ -161,7 +162,8 @@ aspect-ratio: 1071/603;
 }
 .main {
    
-  width: 60vw;
+  width: 55vw;
+  max-width: 650px;
  border: 1px solid red;
  background-size: 4900% 100%;
 aspect-ratio: 1007/566;
@@ -203,19 +205,21 @@ aspect-ratio: 1007/566;
 }
   #deux img{
   position:absolute;
-  bottom: 15vh; 
+  bottom: 12vh; 
   left: 50vw; 
   transform: translate(-10%, -20%);
   border: 1px solid red;
   width: 50vw;
+  max-width: 600px;
 }
 #quatre img{
   position:absolute;
   /*width: 60vw;*/
-  bottom: 5vh; 
-  left: 45vw; 
+  bottom: 4vh; 
+  left: 55vw; 
   transform: translate(-10%, -20%);
   border: 1px solid green;
+  max-width: 620px;
 }
 /*#cinq img.avion_back{
   width: 40vw;
@@ -237,23 +241,24 @@ aspect-ratio: 1007/566;
   
   transform: translate(-5%, -35%);
   width: 27vw;
-
+  max-width: 290px;
   border: 1px solid red; 
 }
 #fin img.ciel{
 
   
   transform: translate(100%, -35%);
-  width: 25vw;
-  
+  width: 24vw;
+  max-width: 280px;
   object-fit:contain;
   border: 1px solid rgb(4, 0, 255);
 }
 
 #fin .all-img-six{
   position:absolute;
-  left: 39vh;
+  left: 55vh;
   top: 36vh;
+  
 }
 #cinq .all-img-cinq{
   width: 45vw;
