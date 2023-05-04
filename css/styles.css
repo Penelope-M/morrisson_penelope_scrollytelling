@@ -144,7 +144,7 @@ width: 100vw;
 .lapin {  
   width: 40vw; 
   max-width: 550px;
- border: 1px solid red;
+ border: 1px solid blue;
  background-size: 1000% 100%;
 aspect-ratio: 1071/603;
   /* Styles pour l'image d'arrière plan */
@@ -164,7 +164,7 @@ aspect-ratio: 1071/603;
    
   width: 55vw;
   max-width: 650px;
- border: 1px solid red;
+ border: 1px solid green;
  background-size: 4900% 100%;
 aspect-ratio: 1007/566;
   /* Styles pour l'image d'arrière plan */
@@ -220,6 +220,14 @@ aspect-ratio: 1007/566;
   bottom: 33vh; 
   /*border: 1px solid rgb(217, 255, 0);*/
 }
+#debut img.bulle{
+  position:absolute;
+  transform: translate(65%, -20%);
+  width: 60vw;
+
+  bottom: 33vh; 
+  border: 1px solid rgb(217, 255, 0);
+}
 #deux img.boulebig{
   position:absolute;
   transform: translate(-500%, 0%);
@@ -242,7 +250,7 @@ aspect-ratio: 1007/566;
   bottom: 4vh; 
   left: 55vw; 
   transform: translate(-10%, -20%);
-  border: 1px solid green;
+  border: 1px solid red;
   max-width: 620px;
 }
 /*#cinq img.avion_back{
