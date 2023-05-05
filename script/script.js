@@ -53,23 +53,23 @@ gsap.to('.lune', {
 gsap.to('.boule', {
   duration: 3,
   rotation:360,
-  x: 2000,
+  x: 1550,
   ease: 'power1.inOut',
   repeat: -1,
   yoyo:true,
 });
 gsap.to('.boulebig', {
-  duration: 4.5,
+  duration: 2,
   rotation:360,
-  x: 2800,
+  x: 700,
   ease: 'bonce.inOut',
   repeat: -1,
   yoyo:true,
 });
 gsap.to('.boulemini', {
-  duration: 5,
+  duration: 1,
   rotation:360,
-  x: 4800,
+  x: 1600,
   ease: 'none.inOut',
   repeat: -1,
   yoyo:true,
