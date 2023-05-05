@@ -94,7 +94,7 @@ main{
  
     position: relative;
     height: 100vh;
-    background-image: url("/img/img_arriere_plan/fond_bureau.png");
+    background-image: url("../img/img_arriere_plan/fond_bureau.png");
     background-size: cover;
     background-position: 50% 80%;
     z-index: 0;
