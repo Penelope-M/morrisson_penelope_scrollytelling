@@ -32,41 +32,29 @@ font-family: 'IM Fell English SC', serif;*/
     }
 
   .fleche{ 
-  /*  margin-top: 30px;
-    text-align:center;   
-    width: 100px;
-    height: 100px;
-    position: relative;*/
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-/*header .fleche a {
-  display: inline-block;
-  margin: 0 auto;
-}
-lord-icon{ 
-    width:100px;
-    height: 100px;
-            
-}*/
+
+
 .arrow {
   position: relative;
   width: 100px;
   height: 100px;
 }
-  .indicator{ 
-    font-family: 'Schoolbell', cursive;
-    color: var(--white);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    font-size: 13px;
-    margin-bottom: 20px;
+.indicator{ 
+  font-family: 'Schoolbell', cursive;
+  color: var(--white);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 13px;
+  margin-bottom: 20px;
     
   } 
  #container{ 
@@ -75,6 +63,7 @@ lord-icon{
   justify-content: flex-start;
   display: flex;
 }
+
 body {
   overflow-y: hidden;
   overflow-x: scroll;
@@ -82,7 +71,6 @@ body {
 }
 
 header {
- 
   width: 100%;
   height: 100vh;
   background-image: url("/img/img_arriere_plan/1.bureau_background.png");
@@ -95,7 +83,6 @@ header {
   justify-content: center;
   align-items: center;
 }
-
 
 
 .content {
@@ -135,18 +122,16 @@ width: 100vw;
 
 .chapitre
 {
-  
   border: 1px solid red;
- 
 }
 
-
+/*Animation lapin*/
 .lapin {  
   width: 40vw; 
   max-width: 550px;
- border: 1px solid blue;
- background-size: 1000% 100%;
-aspect-ratio: 1071/603;
+  border: 1px solid blue;
+  background-size: 1000% 100%;
+  aspect-ratio: 1071/603;
   /* Styles pour l'image d'arrière plan */
    background-image: url('/img/img_personnages/sprite_sheet_lapin3.png');
   /* Styles pour l'animation */
@@ -159,13 +144,14 @@ aspect-ratio: 1071/603;
  @keyframes marche {
   from { background-position: 0 0; }
   to { background-position: -1000% 0; } 
-}
-.main {
-   
+} 
+
+/*Animation main*/
+.main { 
   width: 55vw;
   max-width: 650px;
- border: 1px solid green;
- background-size: 4900% 100%;
+  border: 1px solid green;
+  background-size: 4900% 100%;
 aspect-ratio: 1007/566;
   /* Styles pour l'image d'arrière plan */
    background-image: url('/img/img_personnages/output-onlinegiftools.png');
@@ -185,10 +171,6 @@ aspect-ratio: 1007/566;
  
 }
 
-/*.main {
-  margin: 0 auto;
-}*/
-
 
 .lapin {
   position: absolute;
@@ -203,7 +185,21 @@ aspect-ratio: 1007/566;
 .is-scrolling .main{
   animation-play-state: running;
 }
-  #deux img{
+
+
+/*chapitre 1*/
+#debut img.bulle1{
+  position:absolute;
+  transform: translate(130%, -20%);
+  width: 40vw;
+
+  bottom: 33vh; 
+  border: 1px solid rgb(217, 255, 0);
+}
+
+
+/*chapitre 2*/
+#deux img{
   position:absolute;
   bottom: 12vh; 
   left: 50vw; 
@@ -212,21 +208,13 @@ aspect-ratio: 1007/566;
   width: 50vw;
   max-width: 600px;
 }
-/*#debut img.boulemini{
+#deux img.cadre{
   position:absolute;
-  transform: translate(750%, 0%);
-  width: 5vw;
-  max-width: 100px;
-  bottom: 33vh; 
-  /*border: 1px solid rgb(217, 255, 0);
-}*/
-#debut img.bulle1{
-  position:absolute;
-  transform: translate(130%, -20%);
-  width: 40vw;
-
-  bottom: 33vh; 
-  border: 1px solid rgb(217, 255, 0);
+  transform: translate(-15%, -40%);
+  width: 20vw;
+  max-width: 300px;
+  bottom: 32vh; 
+  /*border: 1px solid rgb(217, 255, 0);*/
 }
 #deux img.boulebig{
   position:absolute;
@@ -236,6 +224,8 @@ aspect-ratio: 1007/566;
   bottom: 33vh; 
   /*border: 1px solid rgb(217, 255, 0);*/
 }
+
+/*chapitre 3*/
 #trois img.boule{
   position:absolute;
   transform: translate(10%, 10%);
@@ -244,6 +234,8 @@ aspect-ratio: 1007/566;
   bottom: 35vh; 
   /*border: 1px solid rgb(217, 255, 0);*/
 }
+
+/*chapitre 4*/
 #quatre img{
   position:absolute;
   /*width: 60vw;*/
@@ -253,21 +245,26 @@ aspect-ratio: 1007/566;
   border: 1px solid red;
   max-width: 620px;
 }
-/*#cinq img.avion_back{
-  width: 40vw;
-  position:absolute;
-  top: 76vh; 
-  left: 49vw; 
-  transform: translate(-10%, -20%);
-  border: 1px solid yellow;
-}*/
+
+/*chapitre 5*/
 #cinq img.avion_front{
   width: 37vw;
   transform: translate(22%, -91%);
   /*border: 1px solid rgb(51, 163, 6);*/
   max-width: 500px;
 }
+#cinq .all-img-cinq{
+  width: 45vw;
+  position:absolute;
+  top: 76vh; 
+  left: 49vw; 
+  transform: translate(-10%, -20%);
+  border: 1px solid yellow;
+  max-width: 600px;
+}
 
+
+/*chapitre 6*/
 #fin img.fenetre{
   transform: translate(-5%, -35%);
   width: 27vw;
@@ -282,7 +279,7 @@ aspect-ratio: 1007/566;
   border: 1px solid rgb(4, 0, 255);
 }
 #fin img.lune{
-  transform: translate(-140%, -210%);
+  transform: translate(-140%, -255%);
   width: 8vw;
   max-width: 100px;
   
@@ -294,15 +291,6 @@ aspect-ratio: 1007/566;
   top: 36vh;
   
 }
-#cinq .all-img-cinq{
-  width: 45vw;
-  position:absolute;
-  top: 76vh; 
-  left: 49vw; 
-  transform: translate(-10%, -20%);
-  border: 1px solid yellow;
-  max-width: 600px;
-}
 
 
 
@@ -313,3 +301,18 @@ aspect-ratio: 1007/566;
   font-size: 1rem;
   margin: 4vw;
 }
+
+/*Paralaxe*/
+/*#parallax-bg-3{
+  background-image: url(/img/img_arriere_plan/ciel_petit.png);
+  background-size: cover;  /* ou 200% pour augmenter l'effet, si l'image originale est assez grande */
+  /*background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: 50% 50%;
+  
+  width: 24vw;
+  height: 40vh;
+  max-width: 280px;
+ 
+  border: 1px solid rgb(4, 0, 255);
+}*/
