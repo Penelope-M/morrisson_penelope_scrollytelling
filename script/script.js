@@ -82,3 +82,31 @@ gsap.to('.pencil', {
   repeat: -1,
   yoyo:true,
 });
+
+let hauteurTotale = document.body.scrollWidth;
+gsap.to("#parallax-bg-1", {
+  scrollTrigger: {
+    scrub: true,
+    markers: true
+  },
+x:hauteurTotale*-0.25,
+ease:'none',
+});
+
+gsap.to("#parallax-bg-2", {
+  scrollTrigger: {
+    scrub: true,
+    markers: true
+  },
+x:hauteurTotale*-0.40,
+ease:'none',
+});
+
+gsap.to("#parallax-bg-3", {
+  scrollTrigger: {
+    scrub: true,
+    markers: true
+  },
+x:hauteurTotale*-0.75,
+ease:'none',
+});
