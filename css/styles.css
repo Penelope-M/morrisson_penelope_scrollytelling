@@ -133,7 +133,7 @@ width: 100vw;
   background-size: 1000% 100%;
   aspect-ratio: 1071/603;
   /* Styles pour l'image d'arrière plan */
-   background-image: url('/img/img_personnages/sprite_sheet_lapin3.png');
+   background-image: url('../img/img_personnages/sprite_sheet_lapin3.png');
   /* Styles pour l'animation */
   animation-name: marche;
   animation-duration: 0.8s;
@@ -154,7 +154,7 @@ width: 100vw;
   background-size: 4900% 100%;
 aspect-ratio: 1007/566;
   /* Styles pour l'image d'arrière plan */
-   background-image: url('/img/img_personnages/output-onlinegiftools.png');
+   background-image: url('../img/img_personnages/output-onlinegiftools.png');
   /* Styles pour l'animation */
   animation-name: flote;
   animation-duration: 1.5s;
