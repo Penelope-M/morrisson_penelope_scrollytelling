@@ -1,6 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
-/*gsap.registerPlugin(MotionPathPlugin);
-gsap.registerPlugin(GSDevTools);
+gsap.registerPlugin(MotionPathPlugin);
+/*gsap.registerPlugin(GSDevTools);
 https://assets.codepen.io/16327/DrawSVGPlugin3.min.js*/
 
 /**/
@@ -50,29 +50,36 @@ gsap.to(".lune", {
   yoyo: true,
 });
 gsap.to(".boule", {
+   x: 1550,
   duration: 3,
   rotation: 360,
-  x: 1550,
+  scrollTrigger: {
+  trigger: '#trois',
+  scrub: true,
   ease: "power1.inOut",
-  repeat: -1,
   yoyo: true,
+},
 });
 gsap.to(".boulebig", {
+  scrollTrigger: {
+  trigger: '#deux',
+  scrub: true,
   duration: 2,
   rotation: 360,
   x: 700,
   ease: "bonce.inOut",
   repeat: -1,
   yoyo: true,
+},
 });
-gsap.to(".boulemini", {
+/*gsap.to(".boulemini", {
   duration: 1,
   rotation: 360,
   x: 1600,
   ease: "none.inOut",
   repeat: -1,
   yoyo: true,
-});
+});*/
 gsap.to(".pencil", {
   duration: 2,
   transformOrigin: "center ",

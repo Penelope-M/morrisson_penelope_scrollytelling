@@ -213,15 +213,17 @@ aspect-ratio: 1007/566;
   transform: translate(-15%, -40%);
   width: 20vw;
   max-width: 300px;
-  bottom: 32vh; 
+  bottom: 34vh;
+  z-index: 1; 
   /*border: 1px solid rgb(217, 255, 0);*/
 }
 #deux img.boulebig{
   position:absolute;
-  transform: translate(-500%, 0%);
+  transform: translate(-440%, 0%);
   width: 12vw;
   max-width: 130px;
   bottom: 33vh; 
+  z-index: 2; 
   /*border: 1px solid rgb(217, 255, 0);*/
 }
 
