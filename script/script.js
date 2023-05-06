@@ -49,27 +49,42 @@ gsap.to(".lune", {
   repeat: -1,
   yoyo: true,
 });
-gsap.to(".boule", {
-   x: 1550,
-  duration: 3,
-  rotation: 360,
+/*gsap.to(".boule", { 
   scrollTrigger: {
   trigger: '#trois',
   scrub: true,
+  markers: true,
+   x: 1550,
+  duration: 3,
+  rotation: 360,
   ease: "power1.inOut",
-  yoyo: true,
+  /*yoyo: true,*//*
+  start: 'left 50%',
+  end: 'right 50%'
 },
+});*/
+gsap.to(".boule", {
+  xPercent: 100,
+  ease: "none",
+  scrollTrigger: {
+    trigger: "#trois",
+    scrub: true,
+    start: "top top",
+    end: "bottom bottom"
+  }
 });
+
 gsap.to(".boulebig", {
   scrollTrigger: {
   trigger: '#deux',
   scrub: true,
+  markers: true,
   duration: 2,
   rotation: 360,
   x: 700,
   ease: "bonce.inOut",
-  repeat: -1,
-  yoyo: true,
+  /*repeat: -1,
+  yoyo: true,*/
 },
 });
 /*gsap.to(".boulemini", {
