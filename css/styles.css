@@ -56,8 +56,8 @@ font-family: 'IM Fell English SC', serif;*/
   font-size: 13px;
   margin-bottom: 20px;
     
-  } /*
- #container{ 
+  } 
+/* #container{ 
   width: 700vw;
   height: 100vh;
   justify-content: flex-start;
@@ -82,6 +82,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color:var(--black);
 }
 
 
