@@ -1,7 +1,7 @@
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(MotionPathPlugin);
-gsap.registerPlugin(GSDevTools);
-/*https://assets.codepen.io/16327/DrawSVGPlugin3.min.js*/
+/*gsap.registerPlugin(GSDevTools);
+https://assets.codepen.io/16327/DrawSVGPlugin3.min.js*/
 
 /**/
 const body = document.querySelector("body");
