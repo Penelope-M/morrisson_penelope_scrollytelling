@@ -142,13 +142,13 @@ window.addEventListener("click", function () {
 
 const myAnimation = gsap.timeline()
     .to('.boulebig', { 
-       x: '100', 
+       x: '500', 
        rotation: 360,
-      duration:1,  
+      duration:6,  
       scrollTrigger: {
         trigger: '#deux',
-        start: 'top top',
-        end: 'bottom bottom',
+        start: 'center top',
+        end: 'center bottom',
         scrub: true,
         markers: true,
         pin:true,
