@@ -143,7 +143,7 @@ window.addEventListener("click", function () {
 const myAnimation = gsap.timeline()
     .to('.boulebig', { 
        x: '500', 
-       rotation: 360,
+       
       duration:6,  
       scrollTrigger: {
         trigger: '#deux',
@@ -153,15 +153,14 @@ const myAnimation = gsap.timeline()
         markers: true,
         pin:true,
         pinSpacing: false,
+        rotation: 360,
         onEnter: () => {
             myAnimation.play();
         },
         onLeave: () => {
-          myAnimation.pause();
-      },
-      onLeaveBack: () => {
           myAnimation.reverse();
-      } 
+      },
+      
     } 
   });
    
