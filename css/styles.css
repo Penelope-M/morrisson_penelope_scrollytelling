@@ -56,7 +56,7 @@ font-family: 'IM Fell English SC', serif;*/
   font-size: 13px;
   margin-bottom: 20px;
     
-  } 
+  } /*
  #container{ 
   width: 700vw;
   height: 100vh;
@@ -69,7 +69,7 @@ body {
   overflow-x: scroll;
   background-color:var(--black);
 }
-
+*/
 header {
   width: 100%;
   height: 100vh;
@@ -85,7 +85,7 @@ header {
 }
 
 
-.content {
+/*.content {
   display: flex;
   flex-wrap: nowrap;
   width: 600vw;
@@ -100,7 +100,17 @@ main{
     z-index: 0;
     transition: all 0.3s ease;
   
-}
+}*/
+.content, main { 
+  display: flex; 
+  flex-wrap: nowrap; 
+  width: 600vw; 
+  position: relative; 
+  height: 100vh; 
+  background-image: url('../img/img_arriere_plan/fond_bureau.png');
+  background-size: cover; 
+  background-position: -50% 80%; 
+  z-index: 1000; }
 
 section {
 width: 100vw;

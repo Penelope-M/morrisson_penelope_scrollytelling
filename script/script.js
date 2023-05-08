@@ -14,7 +14,18 @@ window.addEventListener("scroll", function () {
     body.classList.remove("is-scrolling");
   }, 100);
 });
-
+/*main*/
+gsap.to(".chapitre", 
+{ xPercent: -500, /* -100% * nb de chapitres - 1*/ 
+scrollTrigger: { 
+  trigger: "main", 
+  pin: true, 
+  pinSpacer: false, 
+  markers: true, 
+  scrub: 1, 
+  end: "+=9000", 
+} 
+});
 /*gsap.to("#section-parallax", {
   backgroundPosition: "50% 100%",
   ease: "none",
@@ -26,12 +37,7 @@ window.addEventListener("scroll", function () {
       markers: true
   }
 });
-gsap.to('.no2', {
-  motionPath: '#ligne',
-  duration: 4,
-  repeat: -1,
-  yoyo: true,
-})*/
+
 /* Animation header*/
 gsap.to(".arrow", {
   duration: 2,
@@ -57,18 +63,18 @@ gsap.to(".arrow", {
 
 gsap.set(["#etoiler", "#pensette","#bulle1","#bulle2","#bulle3"],{drawSVG:"0% 0%"});
 function anim() {
-  gsap.timeline()
-  .fromTo(
+  gsap.timeline(),
+  gsap.to(
     "#pensette",
      {
-      drawSVG:"0% 00%"
+      drawSVG:"0% 0%"
     },
     {
       drawSVG:"0% 100%",
       duration: 1
     }
   )
-  .fromTo(
+  gsap.to(
     "#etoiler",
      {
       drawSVG:"0% 0%"
@@ -78,7 +84,7 @@ function anim() {
       duration: 1
     }
   )
-  .fromTo(
+  gsap.to(
     ["#etoiler", "#pensette","#bulle1","#bulle2","#bulle3"],
     {
       fillOpacity: 0
