@@ -32,7 +32,7 @@ gsap.to('.no2', {
   repeat: -1,
   yoyo: true,
 })*/
-
+/* Animation header*/
 gsap.to(".arrow", {
   duration: 2,
   x: "50%",
@@ -41,14 +41,31 @@ gsap.to(".arrow", {
   yoyo: true,
 });
 
-gsap.to(".lune", {
-  duration: 2,
-  rotation: 20,
-  transformOrigin: "center 5%",
-  ease: "power1.inOut",
-  repeat: -1,
-  yoyo: true,
+/*Animation Chapitre 1*/
+/*let animation =gsap.to(".bulle1", {
+  motionPath: {
+ align: "#vallon",
+ path: "#vallon",
+ start: 0,
+ end: 1,
+ alignOrigin: [0.5, 0.9],
+ autoRotate: true,
+ },
+
+ duration: 10,
+})*/
+
+
+let anim= gsap.to("#pense", {
+  morphSVG: "#etoile"
 });
+window.addEventListener("click", function () {
+  console.log("reset");
+  anim.progress(0).pause();
+   const myTimeout = setTimeout(function () {
+     anim.play();
+   }, 1000);
+ });
 /*gsap.to(".boule", { 
   scrollTrigger: {
   trigger: '#trois',
@@ -63,17 +80,7 @@ gsap.to(".lune", {
   end: 'right 50%'
 },
 });*/
-gsap.to(".boule", {
-  xPercent: 100,
-  ease: "none",
-  scrollTrigger: {
-    trigger: "#trois",
-    scrub: true,
-    start: "top top",
-    end: "bottom bottom"
-  }
-});
-
+/* Animation Chapitre 2*/
 gsap.to(".boulebig", {
   scrollTrigger: {
   trigger: '#deux',
@@ -104,6 +111,20 @@ gsap.to(".pencil", {
   yoyo: true,
 });
 
+/* Animation Chapitre 3*/
+gsap.to(".boule", {
+  xPercent: 100,
+  ease: "none",
+  scrollTrigger: {
+    trigger: "#trois",
+    scrub: true,
+    start: "top top",
+    end: "bottom bottom"
+  }
+});
+
+/*Animation chapitre 6*/
+
 gsap.to(".cadre", {
   duration: 3,
   transformOrigin: "center ",
@@ -114,7 +135,14 @@ gsap.to(".cadre", {
   pin: true,
 });
 
-console.log(hauteurTotale);
+gsap.to(".lune", {
+  duration: 2,
+  rotation: 20,
+  transformOrigin: "center 5%",
+  ease: "power1.inOut",
+  repeat: -1,
+  yoyo: true,
+});
 
 gsap.to("#parallax-bg-1", {
   scrollTrigger: {
