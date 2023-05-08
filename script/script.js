@@ -125,7 +125,7 @@ window.addEventListener("click", function () {
 },
 });*/
 /* Animation Chapitre 2*/
-gsap.to(".boulebig", {
+/*gsap.to(".boulebig", {
   scrollTrigger: {
   trigger: '#deux',
   scrub: true,
@@ -135,10 +135,55 @@ gsap.to(".boulebig", {
   ease: "bonce.inOut",
   /*repeat: -1,
   yoyo: true,*/
-  },
+ /* },
   x: '100%',
   duration: 2,
-});
+});*/
+
+const myAnimation = gsap.timeline()
+    .to('.boulebig', { 
+       x: '100', 
+       rotation: 360,
+      duration:1,  
+      scrollTrigger: {
+        trigger: '#deux',
+        start: 'top top',
+        end: 'bottom bottom',
+        scrub: true,
+        markers: true,
+        pin:true,
+        pinSpacing: false,
+        onEnter: () => {
+            myAnimation.play();
+        },
+        onLeave: () => {
+          myAnimation.pause();
+      },
+      onLeaveBack: () => {
+          myAnimation.reverse();
+      } 
+    } 
+  });
+   
+   /* const myTrigger = ScrollTrigger.create({
+      trigger: '#deux',
+      start: 'top center',
+      end: 'bottom center',
+      scrub: true,
+      markers: true,
+      pin:true,
+      pinSpacing: false,
+      onEnter: () => {
+          myAnimation.play();
+      },
+      onLeave: () => {
+        myAnimation.pause();
+    },
+    onLeaveBack: () => {
+        myAnimation.reverse();
+    }
+  });*/
+
 /*gsap
   .timeline({
     scrollTrigger: {
