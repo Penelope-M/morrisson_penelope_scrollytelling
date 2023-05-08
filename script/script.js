@@ -55,11 +55,21 @@ gsap.to(".arrow", {
  duration: 10,
 })*/
 
-gsap.set(["#etoile", "#pense"],{drawSVG:"0% 0%"});
+gsap.set(["#etoiler", "#pensette","#bulle1","#bulle2","#bulle3"],{drawSVG:"0% 0%"});
 function anim() {
   gsap.timeline()
   .fromTo(
-    "#pense",
+    "#pensette",
+     {
+      drawSVG:"0% 00%"
+    },
+    {
+      drawSVG:"0% 100%",
+      duration: 1
+    }
+  )
+  .fromTo(
+    "#etoiler",
      {
       drawSVG:"0% 0%"
     },
@@ -69,17 +79,7 @@ function anim() {
     }
   )
   .fromTo(
-    "#etoile",
-     {
-      drawSVG:"0% 0%"
-    },
-    {
-      drawSVG:"0% 100%",
-      duration: 1
-    }
-  )
-  .fromTo(
-    ["#etoile", "#pense"],
+    ["#etoiler", "#pensette","#bulle1","#bulle2","#bulle3"],
     {
       fillOpacity: 0
     },
@@ -90,7 +90,7 @@ function anim() {
   );
 }
 const dep=document.querySelector("#debut");
-dep.addEventListener("scroll", anim);
+dep.addEventListener("click", anim);
 
 /*let anim= gsap.to("#pense", {
   morphSVG: "#etoile"
