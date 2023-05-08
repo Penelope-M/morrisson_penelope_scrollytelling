@@ -1,7 +1,7 @@
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(MotionPathPlugin);
-/*gsap.registerPlugin(GSDevTools);
-https://assets.codepen.io/16327/DrawSVGPlugin3.min.js*/
+gsap.registerPlugin(GSDevTools);
+/*https://assets.codepen.io/16327/DrawSVGPlugin3.min.js*/
 
 /**/
 const body = document.querySelector("body");
@@ -130,14 +130,30 @@ gsap.to(".boulebig", {
   trigger: '#deux',
   scrub: true,
   markers: true,
-  duration: 2,
+
   rotation: 360,
-  x: 700,
+  toggleActions: "restart complete reverse reset",
   ease: "bonce.inOut",
   /*repeat: -1,
   yoyo: true,*/
-},
+  },
+  x: '100%',
+  duration: 2,
 });
+/*gsap
+  .timeline({
+    scrollTrigger: {
+      markers: true,
+      start: "top 75%",
+      end: "bottom 25%",
+      toggleActions: "restart complete reverse reset",
+      trigger: ".boulebig"
+    }
+  })
+  .to("#deux.boulebig", { x: "0%", duration: 2 },{ x: "100%", duration: 2 })
+  .fromTo("#deux.boulebig",  { opacity: "100%"}, { opacity: "50%", duration: 2});
+*/
+
 /*gsap.to(".boulemini", {
   duration: 1,
   rotation: 360,
