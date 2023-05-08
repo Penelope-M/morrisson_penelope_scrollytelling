@@ -55,8 +55,44 @@ gsap.to(".arrow", {
  duration: 10,
 })*/
 
+gsap.set(["#etoile", "#pense"],{drawSVG:"0% 0%"});
+function anim() {
+  gsap.timeline()
+  .fromTo(
+    "#pense",
+     {
+      drawSVG:"0% 0%"
+    },
+    {
+      drawSVG:"0% 100%",
+      duration: 1
+    }
+  )
+  .fromTo(
+    "#etoile",
+     {
+      drawSVG:"0% 0%"
+    },
+    {
+      drawSVG:"0% 100%",
+      duration: 1
+    }
+  )
+  .fromTo(
+    ["#etoile", "#pense"],
+    {
+      fillOpacity: 0
+    },
+    {
+      fillOpacity: 1,
+      duration: 1
+    }
+  );
+}
+const dep=document.querySelector("#debut");
+dep.addEventListener("scroll", anim);
 
-let anim= gsap.to("#pense", {
+/*let anim= gsap.to("#pense", {
   morphSVG: "#etoile"
 });
 window.addEventListener("click", function () {
@@ -65,7 +101,9 @@ window.addEventListener("click", function () {
    const myTimeout = setTimeout(function () {
      anim.play();
    }, 1000);
- });
+ });*/
+
+
 /*gsap.to(".boule", { 
   scrollTrigger: {
   trigger: '#trois',
