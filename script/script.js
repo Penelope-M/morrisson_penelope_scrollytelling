@@ -130,7 +130,6 @@ gsap.to(".boulebig", {
   trigger: '#deux',
   scrub: true,
   markers: true,
-
   rotation: 360,
   toggleActions: "restart complete reverse reset",
   ease: "bonce.inOut",
