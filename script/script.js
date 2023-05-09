@@ -372,21 +372,22 @@ gsap.to("#parallax-bg-3", {
   ease: "none",
   scrollTrigger: {
       trigger: "#parallax-bg-3",
-      start: "top bottom",
-      end: "bottom top",
+      start:"top center",
+    end:"bottom center",
       scrub: true,
       markers: false,
   }
 });
 gsap.to("#parallax-bg-1", {
-  x: 20,
-
+  x:20,
+  duration: 1,
   ease: "none",
   scrollTrigger: {
-      trigger: "#parallax-bg-1",
-      start: "top 100%",
-      end: " 0% 0% ",
-      scrub: true,
-      markers: true ,
-  }
+    trigger: "#parallax-bg-1",
+    start:"top center",
+    end:"bottom center",
+    scrub: true,
+    markers: true,
+    toggleActions: 'restart complete reverse reset',
+  },
 });
