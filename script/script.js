@@ -15,17 +15,18 @@ window.addEventListener("scroll", function () {
   }, 100);
 });
 /*main*/
-gsap.to(".chapitre", 
-{ xPercent: -500, /* -100% * nb de chapitres - 1*/ 
-scrollTrigger: { 
-  trigger: "main", 
-  pin: true, 
-  pinSpacer: false, 
-  markers: true, 
-  scrub: 1, 
-  end: "+=9000", 
-} 
-});
+gsap.to(".chapitre",
+  {
+    xPercent: -500, /* -100% * nb de chapitres - 1*/
+    scrollTrigger: {
+      trigger: "main",
+      pin: true,
+      pinSpacer: false,
+      markers: true,
+      scrub: 1,
+      end: "+=9000",
+    }
+  });
 /*gsap.to("#section-parallax", {
   backgroundPosition: "50% 100%",
   ease: "none",
@@ -61,31 +62,31 @@ gsap.to(".arrow", {
  duration: 10,
 })*/
 
-gsap.set(["#etoiler", "#pensette","#bulle1","#bulle2","#bulle3"],{drawSVG:"0% 0%"});
+gsap.set(["#etoiler", "#pensette", "#bulle1", "#bulle2", "#bulle3"], { drawSVG: "0% 0%" });
 function anim() {
   gsap.timeline(),
-  gsap.to(
-    "#pensette",
-     {
-      drawSVG:"0% 0%"
-    },
-    {
-      drawSVG:"0% 100%",
-      duration: 1
-    }
-  )
+    gsap.to(
+      "#pensette",
+      {
+        drawSVG: "0% 0%"
+      },
+      {
+        drawSVG: "0% 100%",
+        duration: 1
+      }
+    )
   gsap.to(
     "#etoiler",
-     {
-      drawSVG:"0% 0%"
+    {
+      drawSVG: "0% 0%"
     },
     {
-      drawSVG:"0% 100%",
+      drawSVG: "0% 100%",
       duration: 1
     }
   )
   gsap.to(
-    ["#etoiler", "#pensette","#bulle1","#bulle2","#bulle3"],
+    ["#etoiler", "#pensette", "#bulle1", "#bulle2", "#bulle3"],
     {
       fillOpacity: 0
     },
@@ -95,7 +96,7 @@ function anim() {
     }
   );
 }
-const dep=document.querySelector("#debut");
+const dep = document.querySelector("#debut");
 dep.addEventListener("click", anim);
 
 /*let anim= gsap.to("#pense", {
@@ -120,8 +121,8 @@ window.addEventListener("click", function () {
   rotation: 360,
   ease: "power1.inOut",
   /*yoyo: true,*//*
-  start: 'left 50%',
-  end: 'right 50%'
+start: 'left 50%',
+end: 'right 50%'
 },
 });*/
 /* Animation Chapitre 2*/
@@ -135,12 +136,12 @@ window.addEventListener("click", function () {
   ease: "bonce.inOut",
   /*repeat: -1,
   yoyo: true,*/
- /* },
-  x: '100%',
-  duration: 2,
+/* },
+ x: '100%',
+ duration: 2,
 });*/
 
-const myAnimation = gsap.timeline()
+/*const myAnimation = gsap.timeline()
     .to('.boulebig', { 
        x: '500', 
        
@@ -162,26 +163,50 @@ const myAnimation = gsap.timeline()
       },
       
     } 
-  });
-   
-   /* const myTrigger = ScrollTrigger.create({
+  });*/
+const myAnimation = gsap.timeline()
+  .to('.boulebig', {
+    x: '480',
+    rotation: '360',
+    scrollTrigger: {
       trigger: '#deux',
-      start: 'top center',
-      end: 'bottom center',
+      start: 'center top',
+      end: 'center bottom',
       scrub: true,
       markers: true,
-      pin:true,
-      pinSpacing: false,
-      onEnter: () => {
-          myAnimation.play();
+      pin: true,
+      onEnter: (e) => {
+        myAnimation.play();
       },
-      onLeave: () => {
-        myAnimation.pause();
-    },
-    onLeaveBack: () => {
+      onUpdate: (e) => {
         myAnimation.reverse();
+      },
     }
-  });*/
+  });
+
+
+
+
+
+
+/* const myTrigger = ScrollTrigger.create({
+   trigger: '#deux',
+   start: 'top center',
+   end: 'bottom center',
+   scrub: true,
+   markers: true,
+   pin:true,
+   pinSpacing: false,
+   onEnter: () => {
+       myAnimation.play();
+   },
+   onLeave: () => {
+     myAnimation.pause();
+ },
+ onLeaveBack: () => {
+     myAnimation.reverse();
+ }
+});*/
 
 /*gsap
   .timeline({
@@ -273,7 +298,7 @@ gsap.to("#parallax-bg-3", {
     scrub: true,
     markers: true,
     start: "left right",
-        end: "right left",
+    end: "right left",
   },
   x: 100,
   ease: "none",
