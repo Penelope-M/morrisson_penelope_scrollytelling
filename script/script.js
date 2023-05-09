@@ -177,6 +177,7 @@ const myAnimation = gsap.timeline()
       markers: false,
       pin: true,
       toggleActions: 'restart complete reverse reset',
+      pinSpacing: false,
      /* onEnter: (e) => {
         myAnimation.play();
       },
@@ -198,6 +199,7 @@ const myAnimation = gsap.timeline()
       markers: false,
       pin: true,
       toggleActions: 'restart complete reverse reset',
+      pinSpacing: false,
      /* onEnter: (e) => {
         myAnimation.play();
       },
@@ -222,7 +224,7 @@ const myAnimation = gsap.timeline()
   const animCadre = gsap.timeline()
   
   .to('.cadre', {
-    transformOrigin: "center ",
+    transformOrigin: "center",
     rotation: -4,
     ease: "bonce.inOut",
     scrollTrigger: {
@@ -233,6 +235,7 @@ const myAnimation = gsap.timeline()
       markers: false,
       pin: true,
       toggleActions: 'restart complete reverse reset',
+      pinSpacing: false,
       onEnter: (e) => {
         animCadre.play();
        
@@ -285,16 +288,17 @@ const myAnimation = gsap.timeline()
  const animBoule = gsap.timeline()
   .to('.boule', {
     x:'800',
-    rotation: 360,
+    rotation: '360',
     scrollTrigger: {
       trigger: '#trois',
       start: 'center top',
       end: 'center bottom',
-      scrub:true,
+      scrub: true,
       markers: false,
       pin: true,
+      pinSpacing: false,
      toggleActions: 'restart complete reverse reset',
-      onEnter: (e) => {
+     /* onEnter: (e) => {
         animBoule.play();
       },
       onUpdate: (e) => {
@@ -302,7 +306,7 @@ const myAnimation = gsap.timeline()
       },
       onLeave: (e) => {
         animBoule.reverse();
-      },
+      },*/
     }
   });
   console.log(animBoule);
