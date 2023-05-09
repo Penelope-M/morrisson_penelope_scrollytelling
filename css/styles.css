@@ -254,11 +254,12 @@ aspect-ratio: 1007/566;
 /*chapitre 3*/
 #trois img.boule{
   position:absolute;
-  transform: translate(10%, 10%);
+  transform: translate(-10%, 10%);
   width: 9vw;
   max-width: 110px;
   bottom: 35vh; 
-  /*border: 1px solid rgb(217, 255, 0);*/
+  z-index: 2; 
+  border: 1px solid red;
 }
 
 /*chapitre 4*/
@@ -292,20 +293,33 @@ aspect-ratio: 1007/566;
 
 /*chapitre 6*/
 #fin img.fenetre{
-  transform: translate(-5%, -35%);
+  transform: translate(-5%, -135%);
   width: 27vw;
   max-width: 290px;
   border: 1px solid red; 
 }
-#fin img.ciel{
+ #parallax-bg-3{
+  background-image: url(../img/img_arriere_plan/ciel_petit.png);
+  background-size: cover; 
+  height: 29vh;
+  width: 24vw;
+  max-width: 290px;
+  transform: translate(-5%, -35%);
+  background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 0% 50%;
+  border: 1px solid rgb(4, 0, 255);
+}
+
+/*#fin img.ciel{
   transform: translate(100%, -35%);
   width: 24vw;
   max-width: 280px;
   object-fit:contain;
   border: 1px solid rgb(4, 0, 255);
-}
+}*/
 #fin img.lune{
-  transform: translate(-140%, -255%);
+  transform: translate(-140%, -620%);
   width: 8vw;
   max-width: 100px;
   

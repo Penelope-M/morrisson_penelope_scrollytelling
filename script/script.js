@@ -167,7 +167,7 @@ end: 'right 50%'
   });*/
 const myAnimation = gsap.timeline()
   .to('.boulebig', {
-    x: '480',
+    x: '470',
     rotation: '360',
     scrollTrigger: {
       trigger: '#deux',
@@ -186,7 +186,7 @@ const myAnimation = gsap.timeline()
     }
   });
 
-  const animCadre = gsap.timeline()
+  const animPen = gsap.timeline()
   .to('.pencil', {
     transformOrigin: "center ",
     rotation: -3,
@@ -218,7 +218,34 @@ const myAnimation = gsap.timeline()
     repeat: -1,
     yoyo: true,
   });*/
+
+  const animCadre = gsap.timeline()
   
+  .to('.cadre', {
+    transformOrigin: "center ",
+    rotation: -4,
+    ease: "bonce.inOut",
+    scrollTrigger: {
+      trigger: '#deux',
+      start: 'center top',
+      end: 'center bottom',
+      scrub: true,
+      markers: true,
+      pin: true,
+      toggleActions: 'restart complete reverse reset',
+      onEnter: (e) => {
+        animCadre.play();
+       
+      },
+      onUpdate: (e) => {
+        animCadre.resume();
+      },
+      onLeave: (e) => {
+        animCadre.reverse();
+    },
+    }
+  });
+/*
   gsap.to(".cadre", {
     duration: 3,
     transformOrigin: "center ",
@@ -227,10 +254,7 @@ const myAnimation = gsap.timeline()
     repeat: -1,
     yoyo: true,
     pin: true,
-  });
-
-
-
+  });*/
 
 
 /* gsap
@@ -257,7 +281,31 @@ const myAnimation = gsap.timeline()
 
 
 /* Animation Chapitre 3*/
-gsap.to(".boule", {
+
+ const animBoule = gsap.timeline()
+  .to('.boule', {
+    x:'800',
+    rotation: 360,
+    scrollTrigger: {
+      trigger: '#trois',
+      start: 'center top',
+      end: 'center bottom',
+      scrub: true,
+      markers: true,
+      pin: true,
+     toggleActions: 'restart complete reverse reset',
+      onEnter: (e) => {
+        animBoule.play();
+      },
+      onUpdate: (e) => {
+        animBoule.resume();
+      },
+      onLeave: (e) => {
+        animBoule.reverse();
+      },
+    }
+  });
+/*gsap.to(".boule", {
   xPercent: 100,
   ease: "none",
   scrollTrigger: {
@@ -266,12 +314,13 @@ gsap.to(".boule", {
     start: "top top",
     end: "bottom bottom"
   }
-});
+});*/
+
 
 /*Animation chapitre 6*/
 
 
-
+/*
 gsap.to(".lune", {
   duration: 2,
   rotation: 20,
@@ -280,35 +329,40 @@ gsap.to(".lune", {
   repeat: -1,
   yoyo: true,
 });
-
+/*
 gsap.to("#parallax-bg-1", {
   scrollTrigger: {
-    trigger: "#fin",
+    trigger: "#parallax-bg-1",
     scrub: true,
     markers: true,
+    start: "top bottom",
+    end: "bottom top",
   },
-  x: 300,
+  x: 100,
   ease: "none",
 });
 
 gsap.to("#parallax-bg-2", {
   scrollTrigger: {
-    trigger: "#fin",
+    trigger: "#parallax-bg-2",
     scrub: true,
     markers: true,
+    start: "top bottom",
+    end: "bottom top",
   },
-  x: 200,
+  x: 75 ,
   ease: "none",
 });
 
 gsap.to("#parallax-bg-3", {
   scrollTrigger: {
-    trigger: "#fin",
+    trigger:"#parallax-bg-3",
     scrub: true,
     markers: true,
-    start: "left right",
-    end: "right left",
+    start: "top bottom",
+    end: "bottom top",
+    
   },
-  x: 100,
+  x: 50,
   ease: "none",
-});
+});*/
