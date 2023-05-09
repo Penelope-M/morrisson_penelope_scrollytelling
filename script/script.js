@@ -22,7 +22,7 @@ gsap.to(".chapitre",
       trigger: "main",
       pin: true,
       pinSpacer: false,
-      markers: true,
+      markers: false,
       scrub: 1,
       end: "+=9000",
     }
@@ -174,7 +174,7 @@ const myAnimation = gsap.timeline()
       start: 'center top',
       end: 'center bottom',
       scrub: true,
-      markers: true,
+      markers: false,
       pin: true,
       toggleActions: 'restart complete reverse reset',
      /* onEnter: (e) => {
@@ -195,7 +195,7 @@ const myAnimation = gsap.timeline()
       start: 'center top',
       end: 'center bottom',
       scrub: true,
-      markers: true,
+      markers: false,
       pin: true,
       toggleActions: 'restart complete reverse reset',
      /* onEnter: (e) => {
@@ -230,7 +230,7 @@ const myAnimation = gsap.timeline()
       start: 'center top',
       end: 'center bottom',
       scrub: true,
-      markers: true,
+      markers: false,
       pin: true,
       toggleActions: 'restart complete reverse reset',
       onEnter: (e) => {
@@ -291,7 +291,7 @@ const myAnimation = gsap.timeline()
       start: 'center top',
       end: 'center bottom',
       scrub: true,
-      markers: true,
+      markers: false,
       pin: true,
      toggleActions: 'restart complete reverse reset',
       onEnter: (e) => {
@@ -368,13 +368,25 @@ gsap.to("#parallax-bg-3", {
   ease: "none",
 });*/
 gsap.to("#parallax-bg-3", {
-  x: 1500,
+  backgroundSize: "200%",
   ease: "none",
   scrollTrigger: {
       trigger: "#parallax-bg-3",
-      start: 'top center',
-      end: 'center bottom',
+      start: "top bottom",
+      end: "bottom top",
       scrub: true,
-      markers: true
+      markers: false,
+  }
+});
+gsap.to("#parallax-bg-1", {
+  x: 20,
+
+  ease: "none",
+  scrollTrigger: {
+      trigger: "#parallax-bg-1",
+      start: "top 100%",
+      end: " 0% 0% ",
+      scrub: true,
+      markers: true ,
   }
 });

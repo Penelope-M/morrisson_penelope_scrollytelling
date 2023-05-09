@@ -292,14 +292,28 @@ aspect-ratio: 1007/566;
 
 
 /*chapitre 6*/
-#fin img.fenetre{
+/*#fin img.fenetre{
   transform: translate(-5%, -135%);
   width: 27vw;
   max-width: 290px;
   border: 1px solid red; 
+}*/
+
+#parallax-bg-1{
+  background-image: url(../img/img_arriere_plan/fenetre.png);
+  background-size: cover; 
+  height: 29vh;
+  width: 24vw;
+  max-width: 290px;
+  transform: translate(-5%, -135%);
+  background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 0% 50%;
+  border: 1px solid rgb(4, 0, 255);
 }
+
  #parallax-bg-3{
-  background-image: url(../img/img_arriere_plan/ciel_petit.png);
+  background-image: url(../img/img_arriere_plan/ciel.png);
   background-size: cover; 
   height: 29vh;
   width: 24vw;
@@ -307,7 +321,7 @@ aspect-ratio: 1007/566;
   transform: translate(-5%, -35%);
   background-repeat: no-repeat;
     background-attachment: scroll;
-    background-position: 0% 50%;
+    background-position: 25% 100%;
   border: 1px solid rgb(4, 0, 255);
 }
 
