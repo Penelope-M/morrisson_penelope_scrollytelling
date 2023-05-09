@@ -290,7 +290,7 @@ const myAnimation = gsap.timeline()
       trigger: '#trois',
       start: 'center top',
       end: 'center bottom',
-      scrub: true,
+      scrub:true,
       markers: false,
       pin: true,
      toggleActions: 'restart complete reverse reset',
