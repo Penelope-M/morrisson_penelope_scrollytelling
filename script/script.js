@@ -305,6 +305,7 @@ const myAnimation = gsap.timeline()
       },
     }
   });
+  console.log(animBoule);
 /*gsap.to(".boule", {
   xPercent: 100,
   ease: "none",
@@ -320,7 +321,7 @@ const myAnimation = gsap.timeline()
 /*Animation chapitre 6*/
 
 
-/*
+
 gsap.to(".lune", {
   duration: 2,
   rotation: 20,
@@ -329,8 +330,8 @@ gsap.to(".lune", {
   repeat: -1,
   yoyo: true,
 });
-/*
-gsap.to("#parallax-bg-1", {
+
+/*gsap.to("#parallax-bg-1", {
   scrollTrigger: {
     trigger: "#parallax-bg-1",
     scrub: true,
@@ -366,3 +367,14 @@ gsap.to("#parallax-bg-3", {
   x: 50,
   ease: "none",
 });*/
+gsap.to("#parallax-bg-3", {
+  x: 1500,
+  ease: "none",
+  scrollTrigger: {
+      trigger: "#parallax-bg-3",
+      start: 'top center',
+      end: 'center bottom',
+      scrub: true,
+      markers: true
+  }
+});
