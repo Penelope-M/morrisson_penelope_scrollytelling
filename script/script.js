@@ -125,6 +125,7 @@ start: 'left 50%',
 end: 'right 50%'
 },
 });*/
+
 /* Animation Chapitre 2*/
 /*gsap.to(".boulebig", {
   scrollTrigger: {
@@ -175,40 +176,64 @@ const myAnimation = gsap.timeline()
       scrub: true,
       markers: true,
       pin: true,
-      onEnter: (e) => {
+      toggleActions: 'restart complete reverse reset',
+     /* onEnter: (e) => {
         myAnimation.play();
       },
       onUpdate: (e) => {
         myAnimation.reverse();
+      },*/
+    }
+  });
+
+  const animCadre = gsap.timeline()
+  .to('.pencil', {
+    transformOrigin: "center ",
+    rotation: -3,
+    scrollTrigger: {
+      trigger: '#deux',
+      start: 'center top',
+      end: 'center bottom',
+      scrub: true,
+      markers: true,
+      pin: true,
+      toggleActions: 'restart complete reverse reset',
+     /* onEnter: (e) => {
+        myAnimation.play();
       },
+      onUpdate: (e) => {
+        myAnimation.reverse();
+      },*/
     }
   });
 
 
 
 
+ /* gsap.to(".pencil", {
+    duration: 2,
+    transformOrigin: "center ",
+    rotation: -2,
+    ease: "bonce.inOut",
+    repeat: -1,
+    yoyo: true,
+  });*/
+  
+  gsap.to(".cadre", {
+    duration: 3,
+    transformOrigin: "center ",
+    rotation: -2,
+    ease: "bonce.inOut",
+    repeat: -1,
+    yoyo: true,
+    pin: true,
+  });
 
 
-/* const myTrigger = ScrollTrigger.create({
-   trigger: '#deux',
-   start: 'top center',
-   end: 'bottom center',
-   scrub: true,
-   markers: true,
-   pin:true,
-   pinSpacing: false,
-   onEnter: () => {
-       myAnimation.play();
-   },
-   onLeave: () => {
-     myAnimation.pause();
- },
- onLeaveBack: () => {
-     myAnimation.reverse();
- }
-});*/
 
-/*gsap
+
+
+/* gsap
   .timeline({
     scrollTrigger: {
       markers: true,
@@ -221,7 +246,6 @@ const myAnimation = gsap.timeline()
   .to("#deux.boulebig", { x: "0%", duration: 2 },{ x: "100%", duration: 2 })
   .fromTo("#deux.boulebig",  { opacity: "100%"}, { opacity: "50%", duration: 2});
 */
-
 /*gsap.to(".boulemini", {
   duration: 1,
   rotation: 360,
@@ -230,14 +254,7 @@ const myAnimation = gsap.timeline()
   repeat: -1,
   yoyo: true,
 });*/
-gsap.to(".pencil", {
-  duration: 2,
-  transformOrigin: "center ",
-  rotation: -2,
-  ease: "bonce.inOut",
-  repeat: -1,
-  yoyo: true,
-});
+
 
 /* Animation Chapitre 3*/
 gsap.to(".boule", {
@@ -253,15 +270,7 @@ gsap.to(".boule", {
 
 /*Animation chapitre 6*/
 
-gsap.to(".cadre", {
-  duration: 3,
-  transformOrigin: "center ",
-  rotation: -2,
-  ease: "bonce.inOut",
-  repeat: -1,
-  yoyo: true,
-  pin: true,
-});
+
 
 gsap.to(".lune", {
   duration: 2,
