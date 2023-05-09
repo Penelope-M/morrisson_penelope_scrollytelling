@@ -287,7 +287,7 @@ const myAnimation = gsap.timeline()
 
  const animBoule = gsap.timeline()
   .to('.boule', {
-    x:'800',
+    x:'500%',
     rotation: '360',
     scrollTrigger: {
       trigger: '#trois',
@@ -375,7 +375,7 @@ gsap.to("#parallax-bg-3", {
   backgroundSize: "200%",
   ease: "none",
   scrollTrigger: {
-      trigger: "#parallax-bg-3",
+      trigger: "#fin",
       start:"top center",
     end:"bottom center",
       scrub: true,
@@ -387,7 +387,7 @@ gsap.to("#parallax-bg-1", {
   duration: 1,
   ease: "none",
   scrollTrigger: {
-    trigger: "#parallax-bg-1",
+    trigger: "#fin",
     start:"top center",
     end:"bottom center",
     scrub: true,
