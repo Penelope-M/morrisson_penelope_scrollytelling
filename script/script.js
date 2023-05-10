@@ -14,6 +14,19 @@ window.addEventListener("scroll", function () {
     body.classList.remove("is-scrolling");
   }, 100);
 });
+/*gsap.to(".header-content",
+  {
+   yPercent: -100, /* -100% * nb de chapitres - 1*/
+  /*   scrollTrigger: {
+      trigger: "header",
+      pin: true,
+      pinSpacer: false,
+      markers: false,
+      scrub: 1,
+      end: "+=9000",
+    }
+  });*/
+
 /*main*/
 gsap.to(".chapitre",
   {
