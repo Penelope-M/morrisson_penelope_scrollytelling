@@ -390,9 +390,10 @@ gsap.to('.boule', {
 });*/
 /*Animation chapitre 5*/
 
-gsap.to(".all-img-cinq", {
+ gsap.to(".all-img-cinq", {
   /* backgroundPosition: "120px center",*/
-  scale:0.5,
+  x:900,
+  y:-500,
    ease: "none",
    scrollTrigger: {
      trigger: "#fin",
@@ -401,19 +402,20 @@ gsap.to(".all-img-cinq", {
      markers: true,
      toggleActions: 'restart complete reverse reset',
    },
- });
- gsap.to(".all-img-cinq", {
-  /* backgroundPosition: "120px center",*/
-  x:900,
-  y:-500,
-   ease: "none",
-   scrollTrigger: {
-     trigger: "#cinq",
-     end: '+=9000',
-     scrub: true,
-     markers: true,
-     toggleActions: 'restart complete reverse reset',
-   },
+   onUpdate: () => {
+    gsap.to(".all-img-cinq", {
+      /* backgroundPosition: "120px center",*/
+      scale:0.5,
+       ease: "none",
+       scrollTrigger: {
+         trigger: "#fin",
+         end: '+=9000',
+         scrub: true,
+         markers: true,
+         toggleActions: 'restart complete reverse reset',
+       },
+     });
+  }
  });
 /*Animation chapitre 6*/
 

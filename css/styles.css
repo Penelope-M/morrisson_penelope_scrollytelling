@@ -293,6 +293,7 @@ aspect-ratio: 1007/566;
   transform: translate(-10%, -20%);
   border: 1px solid yellow;
   max-width: 600px;
+  z-index: 2;
 }
 
 
@@ -315,6 +316,7 @@ aspect-ratio: 1007/566;
     background-attachment: scroll;
     background-position: 0% 50%;
   border: 1px solid rgb(4, 0, 255);
+  z-index: 3;
 }
 
  #parallax-bg-3{
@@ -328,6 +330,7 @@ aspect-ratio: 1007/566;
     background-attachment: scroll;
     background-position: 25% 100%;
   border: 1px solid rgb(4, 0, 255);
+  z-index: 1;
 }
 
 /*#fin img.ciel{
@@ -341,7 +344,7 @@ aspect-ratio: 1007/566;
   transform: translate(-140%, -620%);
   width: 8vw;
   max-width: 100px;
-  
+  z-index: 2;
   /*border: 1px solid rgb(217, 255, 0);*/
 }
 #fin .all-img-six{
