@@ -357,8 +357,7 @@ gsap.to('.boule', {
       return `+=${parentWidth - document.querySelector('.boule').offsetWidth}`;
     },
     onComplete: (animation) => {
-      animation.progress(1).kill();
-      gsap.set('.boule', { width: '0%' });
+      animation.resume();
     }
   }
 });/*
