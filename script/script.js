@@ -201,12 +201,11 @@ end: 'right 50%'
 });*/
 
 gsap.to('.boulebig', {
-  xPercent: 700,
+  xPercent: 900,
   rotation: '360',
   scrollTrigger: {
     trigger: '#deux',
-    start: 'center top',
-    end: 'center bottom',
+    end: '+=5000',
     scrub: true,
     markers: false,
     pin: true,
@@ -216,11 +215,10 @@ gsap.to('.boulebig', {
 });
 gsap.to('.pencil', {
   transformOrigin: "center ",
-  rotation: -3,
+  rotation: -5,
   scrollTrigger: {
     trigger: '#deux',
-    start: 'center top',
-    end: 'center bottom',
+    end: '+=5000',
     scrub: true,
     markers: false,
     pin: true,
@@ -232,12 +230,11 @@ gsap.to('.pencil', {
 
 gsap.to('.cadre', {
   transformOrigin: "center",
-  rotation: -4,
+  rotation: -10,
   ease: "bonce.inOut",
   scrollTrigger: {
     trigger: '#deux',
-    start: 'center top',
-    end: 'center bottom',
+    end: '+=6000',
     scrub: true,
     markers: false,
     pin: true,
@@ -343,7 +340,7 @@ gsap.to('.cadre', {
 
 /* Animation Chapitre 3*/
 gsap.to('.boule', {
-  width: '100%',
+  x: '800',
   rotation: '360',
   scrollTrigger: {
     trigger: '#trois',
@@ -352,13 +349,7 @@ gsap.to('.boule', {
     pin: true,
     pinSpacing: false,
     toggleActions: 'restart complete reverse reset',
-    end: () => {
-      const parentWidth = document.querySelector('#trois').offsetWidth;
-      return `+=${parentWidth - document.querySelector('.boule').offsetWidth}`;
-    },
-    onComplete: (animation) => {
-      animation.resume();
-    }
+    end: '+=5000',
   }
 });/*
  const animBoule = gsap.timeline()
