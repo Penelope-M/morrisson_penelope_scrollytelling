@@ -388,8 +388,33 @@ gsap.to('.boule', {
     end: "bottom bottom"
   }
 });*/
+/*Animation chapitre 5*/
 
-
+gsap.to(".all-img-cinq", {
+  /* backgroundPosition: "120px center",*/
+  scale:0.5,
+   ease: "none",
+   scrollTrigger: {
+     trigger: "#fin",
+     end: '+=9000',
+     scrub: true,
+     markers: true,
+     toggleActions: 'restart complete reverse reset',
+   },
+ });
+ gsap.to(".all-img-cinq", {
+  /* backgroundPosition: "120px center",*/
+  x:900,
+  y:-500,
+   ease: "none",
+   scrollTrigger: {
+     trigger: "#cinq",
+     end: '+=9000',
+     scrub: true,
+     markers: true,
+     toggleActions: 'restart complete reverse reset',
+   },
+ });
 /*Animation chapitre 6*/
 
 
@@ -441,6 +466,7 @@ gsap.to("#parallax-bg-3", {
 });*/
 gsap.to("#parallax-bg-3", {
   backgroundSize: "200%",
+  scale:1.5,
   ease: "none",
   scrollTrigger: {
     trigger: "#fin",
@@ -450,10 +476,11 @@ gsap.to("#parallax-bg-3", {
   }
 });
 gsap.to("#parallax-bg-1", {
-x:'100%',
+ /* backgroundPosition: "120px center",*/
+ scale:1.5,
   ease: "none",
   scrollTrigger: {
-    trigger: "#parallax-bg-2",
+    trigger: "#fin",
     end: '+=9000',
     scrub: true,
     markers: true,
