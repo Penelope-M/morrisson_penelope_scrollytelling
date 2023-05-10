@@ -17,15 +17,15 @@ window.addEventListener("scroll", function () {
 /*gsap.to(".header-content",
   {
    yPercent: -100, /* -100% * nb de chapitres - 1*/
-  /*   scrollTrigger: {
-      trigger: "header",
-      pin: true,
-      pinSpacer: false,
-      markers: false,
-      scrub: 1,
-      end: "+=9000",
-    }
-  });*/
+/*   scrollTrigger: {
+    trigger: "header",
+    pin: true,
+    pinSpacer: false,
+    markers: false,
+    scrub: 1,
+    end: "+=9000",
+  }
+});*/
 
 /*main*/
 gsap.to(".chapitre",
@@ -178,7 +178,7 @@ end: 'right 50%'
       
     } 
   });*/
-const myAnimation = gsap.timeline()
+/*const myAnimation = gsap.timeline()
   .to('.boulebig', {
     x: '470',
     rotation: '360',
@@ -197,43 +197,88 @@ const myAnimation = gsap.timeline()
       onUpdate: (e) => {
         myAnimation.reverse();
       },*/
-    }
-  });
+/*}
+});*/
 
-  const animPen = gsap.timeline()
-  .to('.pencil', {
-    transformOrigin: "center ",
-    rotation: -3,
-    scrollTrigger: {
-      trigger: '#deux',
-      start: 'center top',
-      end: 'center bottom',
-      scrub: true,
-      markers: false,
-      pin: true,
-      toggleActions: 'restart complete reverse reset',
-      pinSpacing: false,
-     /* onEnter: (e) => {
-        myAnimation.play();
-      },
-      onUpdate: (e) => {
-        myAnimation.reverse();
-      },*/
-    }
-  });
+gsap.to('.boulebig', {
+  xPercent: 700,
+  rotation: '360',
+  scrollTrigger: {
+    trigger: '#deux',
+    start: 'center top',
+    end: 'center bottom',
+    scrub: true,
+    markers: false,
+    pin: true,
+    toggleActions: 'restart complete reverse reset',
+    pinSpacing: false,
+  }
+});
+gsap.to('.pencil', {
+  transformOrigin: "center ",
+  rotation: -3,
+  scrollTrigger: {
+    trigger: '#deux',
+    start: 'center top',
+    end: 'center bottom',
+    scrub: true,
+    markers: false,
+    pin: true,
+    toggleActions: 'restart complete reverse reset',
+    pinSpacing: false,
+  }
+});
+
+
+gsap.to('.cadre', {
+  transformOrigin: "center",
+  rotation: -4,
+  ease: "bonce.inOut",
+  scrollTrigger: {
+    trigger: '#deux',
+    start: 'center top',
+    end: 'center bottom',
+    scrub: true,
+    markers: false,
+    pin: true,
+    toggleActions: 'restart complete reverse reset',
+    pinSpacing: false,
+  }
+});
+/* const animPen = gsap.timeline()
+ .to('.pencil', {
+   transformOrigin: "center ",
+   rotation: -3,
+   scrollTrigger: {
+     trigger: '#deux',
+     start: 'center top',
+     end: 'center bottom',
+     scrub: true,
+     markers: false,
+     pin: true,
+     toggleActions: 'restart complete reverse reset',
+     pinSpacing: false,
+    /* onEnter: (e) => {
+       myAnimation.play();
+     },
+     onUpdate: (e) => {
+       myAnimation.reverse();
+     },
+   }
+ });*/
 
 
 
 
- /* gsap.to(".pencil", {
-    duration: 2,
-    transformOrigin: "center ",
-    rotation: -2,
-    ease: "bonce.inOut",
-    repeat: -1,
-    yoyo: true,
-  });*/
-
+/* gsap.to(".pencil", {
+   duration: 2,
+   transformOrigin: "center ",
+   rotation: -2,
+   ease: "bonce.inOut",
+   repeat: -1,
+   yoyo: true,
+ });*/
+/*
   const animCadre = gsap.timeline()
   
   .to('.cadre', {
@@ -260,7 +305,7 @@ const myAnimation = gsap.timeline()
         animCadre.reverse();
     },
     }
-  });
+  });/*
 /*
   gsap.to(".cadre", {
     duration: 3,
@@ -297,7 +342,26 @@ const myAnimation = gsap.timeline()
 
 
 /* Animation Chapitre 3*/
-
+gsap.to('.boule', {
+  width: '100%',
+  rotation: '360',
+  scrollTrigger: {
+    trigger: '#trois',
+    scrub: true,
+    markers: false,
+    pin: true,
+    pinSpacing: false,
+    toggleActions: 'restart complete reverse reset',
+    end: () => {
+      const parentWidth = document.querySelector('#trois').offsetWidth;
+      return `+=${parentWidth - document.querySelector('.boule').offsetWidth}`;
+    },
+    onComplete: (animation) => {
+      animation.progress(1).kill();
+      gsap.set('.boule', { width: '0%' });
+    }
+  }
+});/*
  const animBoule = gsap.timeline()
   .to('.boule', {
     x:'500%',
@@ -319,10 +383,11 @@ const myAnimation = gsap.timeline()
       },
       onLeave: (e) => {
         animBoule.reverse();
-      },*/
+      },
     }
   });
-  console.log(animBoule);
+  console.log(animBoule);*/
+
 /*gsap.to(".boule", {
   xPercent: 100,
   ease: "none",
@@ -388,21 +453,21 @@ gsap.to("#parallax-bg-3", {
   backgroundSize: "200%",
   ease: "none",
   scrollTrigger: {
-      trigger: "#fin",
-      start:"top center",
-    end:"bottom center",
-      scrub: true,
-      markers: false,
+    trigger: "#fin",
+    start: "top center",
+    end: "bottom center",
+    scrub: true,
+    markers: false,
   }
 });
 gsap.to("#parallax-bg-1", {
-  x:20,
+  x: 20,
   duration: 1,
   ease: "none",
   scrollTrigger: {
     trigger: "#fin",
-    start:"top center",
-    end:"bottom center",
+    start: "top center",
+    end: "bottom center",
     scrub: true,
     markers: true,
     toggleActions: 'restart complete reverse reset',
