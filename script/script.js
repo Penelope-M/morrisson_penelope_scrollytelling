@@ -444,20 +444,17 @@ gsap.to("#parallax-bg-3", {
   ease: "none",
   scrollTrigger: {
     trigger: "#fin",
-    start: "top center",
-    end: "bottom center",
+    end: '+=9000',
     scrub: true,
     markers: false,
   }
 });
 gsap.to("#parallax-bg-1", {
-  x: 20,
-  duration: 1,
+x:'100%',
   ease: "none",
   scrollTrigger: {
-    trigger: "#fin",
-    start: "top center",
-    end: "bottom center",
+    trigger: "#parallax-bg-2",
+    end: '+=9000',
     scrub: true,
     markers: true,
     toggleActions: 'restart complete reverse reset',
