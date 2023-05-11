@@ -468,7 +468,7 @@ gsap.to("#parallax-bg-3", {
 });*/
 gsap.to("#parallax-bg-3", {
   backgroundSize: "200%",
-  scale:1.5,
+  scale:1.45,
   ease: "none",
   scrollTrigger: {
     trigger: "#fin",
