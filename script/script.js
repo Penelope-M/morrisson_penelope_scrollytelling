@@ -67,15 +67,15 @@ gsap.to(".arrow", {
 /*gsap.set(".lapin", {scale: 0.5, autoAlpha: 1});*/
 
 gsap.to("#lapin", {
-  scale: 0.5,
-delay:2,
+  
+
   motionPath: {
     path: "#path",
     align: "#path",
     autoRotate: true,
     alignOrigin: [0.0, 0.9],
     autoRotate: true,
-    start:0,
+    start:0.0,
     end:1,
   },
   scrollTrigger: {
