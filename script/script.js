@@ -71,7 +71,7 @@ gsap.to(".lapin", {
     path: "#path",
     align: "#path",
     autoRotate: true,
-    alignOrigin: [0.0, 0.5],
+    alignOrigin: [0.0, 0.9],
     autoRotate: 0,
   },
   scrollTrigger: {
@@ -79,6 +79,20 @@ gsap.to(".lapin", {
     end: "+=10000",
     scrub: 1,
   },
+  onUpdate: () => {
+    gsap.to(".lapin", {
+      /* backgroundPosition: "120px center",*/
+      scale:0.5,
+       ease: "none",
+       scrollTrigger: {
+         trigger: ".all-img-cinq",
+       
+         scrub: true,
+         markers: false,
+         toggleActions: 'restart complete reverse reset',
+       },
+     });
+     }
 });
 
 /*gsap.to(".lapin", {
@@ -229,7 +243,7 @@ gsap.to('.boule', {
   y:-500,
    ease: "none",
    scrollTrigger: {
-     trigger: "#fin",
+     trigger: ".lapin",
      end: '+=9000',
      scrub: true,
      markers:false,
@@ -241,7 +255,7 @@ gsap.to('.boule', {
       scale:0.5,
        ease: "none",
        scrollTrigger: {
-         trigger: "#fin",
+         trigger: ".lapin",
          end: '+=9000',
          scrub: true,
          markers: false,

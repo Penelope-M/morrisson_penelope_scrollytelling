@@ -150,7 +150,7 @@ width: 100vw;
 .lapin {  
   display: inline-block;
   width: 40vw; 
-  max-width: 550px;
+  max-width: 525px;
   border: 1px solid blue;
   background-size: 1000% 100%;
   aspect-ratio: 1071/603;
@@ -217,6 +217,7 @@ width: 100vw;
 #motionPath path {
   stroke-width: 2;
   stroke: gray;
+ 
 }
 #motionPath .main {
   visibility: hidden;
