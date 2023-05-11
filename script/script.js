@@ -75,7 +75,7 @@ gsap.to(".lapin", {
     autoRotate: 0,
   },
   scrollTrigger: {
-    trigger: "#trois",
+    trigger: "#debut",
     end: "+=10000",
     scrub: 1,
   },
