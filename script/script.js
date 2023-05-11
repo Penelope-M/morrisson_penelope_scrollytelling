@@ -222,7 +222,7 @@ gsap.to('.boule', {
 
 gsap.to(".all-img-cinq", {
   scale:0.5,
-  delay:0.5,
+  
   ease: "sine.in",
   motionPath: {
     path: "#path",
@@ -234,7 +234,7 @@ gsap.to(".all-img-cinq", {
     autoRotate: 0,
   },
   scrollTrigger: {
-    trigger: "#fin",
+    trigger: "#lapin",
     end: "+=10000",
     scrub: true,
     markers:false,
