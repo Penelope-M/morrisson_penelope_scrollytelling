@@ -67,16 +67,16 @@ gsap.to(".arrow", {
 /*gsap.set(".lapin", {scale: 0.5, autoAlpha: 1});*/
 
 gsap.to("#lapin", {
- /* scale: 0.5,*/
- duration:1,
- ease:'sine.in',
+  scale: 0.5,
+delay:2,
   motionPath: {
     path: "#path",
     align: "#path",
     autoRotate: true,
     alignOrigin: [0.0, 0.9],
     autoRotate: true,
-
+    start:0,
+    end:1,
   },
   scrollTrigger: {
     trigger: "#debut",
@@ -221,18 +221,19 @@ gsap.to('.boule', {
 
 gsap.to(".all-img-cinq", {
   scale:0.5,
-  ease: "none",
+  delay:0.5,
+  ease: "sine.in",
   motionPath: {
     path: "#path",
     align: "#path",
     autoRotate: true,
     alignOrigin: [0.0, 0.6],
-    start: 0.6,
+    start: 0.65,
     end: 1,
     autoRotate: 0,
   },
   scrollTrigger: {
-    trigger: "#lapin",
+    trigger: "#fin",
     end: "+=10000",
     scrub: true,
     markers:false,
