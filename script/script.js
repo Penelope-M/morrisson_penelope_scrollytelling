@@ -51,6 +51,7 @@ gsap.to(".arrow", {
 });
 
 /*Animation Chapitre 1*/
+
 /*let animation =gsap.to(".bulle1", {
   motionPath: {
  align: "#vallon",
@@ -63,6 +64,38 @@ gsap.to(".arrow", {
 
  duration: 10,
 })*/
+/*gsap.set(".lapin", {scale: 0.5, autoAlpha: 1});*/
+gsap.to(".lapin", {
+  ease: "power1.inOut",
+  motionPath: {
+    path: "#path",
+    align: "#path",
+    autoRotate: true,
+    alignOrigin: [0.0, 0.5],
+    autoRotate: 0,
+  },
+  scrollTrigger: {
+    trigger: "#trois",
+    end: "+=10000",
+    scrub: 1,
+  },
+});
+
+/*gsap.to(".lapin", {
+  duration: 5, 
+  ease: "power1.inOut",repeat: -1,
+  yoyo: true,
+  /*immediateRender: true,*//*
+  motionPath: {
+    path: "#path",
+    align: "#path",
+    alignOrigin: [0.5, 0.5],
+    autoRotate: 90
+  }
+});*/
+
+/*MotionPathHelper.create(".lapin");*/
+
 
 gsap.set(["#etoiler", "#pensette", "#bulle1", "#bulle2", "#bulle3"], { drawSVG: "0% 0%" });
 function anim() {
@@ -199,7 +232,7 @@ gsap.to('.boule', {
      trigger: "#fin",
      end: '+=9000',
      scrub: true,
-     markers: true,
+     markers:false,
      toggleActions: 'restart complete reverse reset',
    },
    onUpdate: () => {
@@ -211,7 +244,7 @@ gsap.to('.boule', {
          trigger: "#fin",
          end: '+=9000',
          scrub: true,
-         markers: true,
+         markers: false,
          toggleActions: 'restart complete reverse reset',
        },
      });
@@ -247,7 +280,7 @@ gsap.to("#parallax-bg-1", {
     trigger: "#fin",
     end: '+=9000',
     scrub: true,
-    markers: true,
+    markers: false,
     toggleActions: 'restart complete reverse reset',
   },
 });

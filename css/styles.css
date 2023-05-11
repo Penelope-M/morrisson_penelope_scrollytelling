@@ -116,12 +116,17 @@ main{
   background-image: url('../img/img_arriere_plan/fond_bureau.png');
   background-size: cover; 
   background-position: -50% 80%; 
-  z-index: 1000; }
+  z-index: 1000; 
+overflow: hidden;
+}
+  
+
 
 section {
 width: 100vw;
   height: 100vh;
   position: relative;
+  
 }
 .header-content {
   max-width: 800px;
@@ -143,6 +148,7 @@ width: 100vw;
 
 /*Animation lapin*/
 .lapin {  
+  display: inline-block;
   width: 40vw; 
   max-width: 550px;
   border: 1px solid blue;
@@ -168,7 +174,7 @@ width: 100vw;
   max-width: 650px;
   border: 1px solid green;
   background-size: 4900% 100%;
-aspect-ratio: 1007/566;
+  aspect-ratio: 1007/566;
   /* Styles pour l'image d'arrière plan */
    background-image: url('../img/img_personnages/output-onlinegiftools.png');
   /* Styles pour l'animation */
@@ -202,7 +208,24 @@ aspect-ratio: 1007/566;
   animation-play-state: running;
 }
 
+#motionPath {
+  overflow: visible;
+  height: 100%;
 
+
+}
+#motionPath path {
+  stroke-width: 2;
+  stroke: gray;
+}
+#motionPath .main {
+  visibility: hidden;
+}
+
+/*body  {
+ 
+  position: absolute;
+}*/
 /*chapitre 1*/
 #pense{
   position:absolute;
