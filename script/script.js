@@ -80,18 +80,22 @@ gsap.to(".lapin", {
     scrub: 1,
   },
   onUpdate: () => {
-    gsap.to(".lapin", {
-      /* backgroundPosition: "120px center",*/
-      scale:0.5,
-       ease: "none",
-       scrollTrigger: {
-         trigger: ".all-img-cinq",
-       
-         scrub: true,
-         markers: false,
-         toggleActions: 'restart complete reverse reset',
-       },
-     });
+    ScrollTrigger.create({
+      trigger: ".all-img-cinq",
+      endTrigger: "#fin",
+      scrub: true,
+      markers: false,
+      toggleActions: "restart complete reverse reset",
+      onUpdate: (self) => {
+        // Vérifier si l'élément ".lapin" est en vue
+        if (self.isActive) {
+          gsap.to(".lapin", {
+            scale: 0.5,
+            ease: "none",
+          });
+        }
+      },
+    });
      }
 });
 
@@ -236,11 +240,29 @@ gsap.to('.boule', {
 });
 
 /*Animation chapitre 5*/
-
- gsap.to(".all-img-cinq", {
+gsap.to(".all-img-cinq", {
+  scale:0.5,
+  ease: "power1.inOut",
+  motionPath: {
+    path: "#path",
+    align: "#path",
+    autoRotate: true,
+    start: 0.6,
+    end: 1,
+    autoRotate: 0,
+  },
+  scrollTrigger: {
+    trigger: ".lapin",
+    end: "+=10000",
+    scrub: true,
+    markers:false,
+    scrub: 1,
+  },
+});
+ /*gsap.to(".all-img-cinq", {
   /* backgroundPosition: "120px center",*/
-  x:900,
-  y:-500,
+ /* x:900,
+  y:-500,*//*
    ease: "none",
    scrollTrigger: {
      trigger: ".lapin",
@@ -248,11 +270,11 @@ gsap.to('.boule', {
      scrub: true,
      markers:false,
      toggleActions: 'restart complete reverse reset',
-   },
-   onUpdate: () => {
+   },*/
+   /*onUpdate: () => {
     gsap.to(".all-img-cinq", {
       /* backgroundPosition: "120px center",*/
-      scale:0.5,
+     /* scale:0.5,
        ease: "none",
        scrollTrigger: {
          trigger: ".lapin",
@@ -263,7 +285,7 @@ gsap.to('.boule', {
        },
      });
   }
- });
+ });*/
 /*Animation chapitre 6*/
 
 gsap.to(".lune", {
