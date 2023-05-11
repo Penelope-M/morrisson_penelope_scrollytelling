@@ -66,20 +66,25 @@ gsap.to(".arrow", {
 })*/
 /*gsap.set(".lapin", {scale: 0.5, autoAlpha: 1});*/
 gsap.to(".lapin", {
+  scale: 0.5,
   ease: "power1.inOut",
   motionPath: {
     path: "#path",
     align: "#path",
     autoRotate: true,
     alignOrigin: [0.0, 0.9],
-    autoRotate: 0,
+    autoRotate: true,
+    start: 0.6,
+    end: 1,
   },
   scrollTrigger: {
     trigger: "#debut",
     end: "+=10000",
     scrub: 1,
+    pin:true,
   },
-  onUpdate: () => {
+  
+ /* onUpdate: () => {
     ScrollTrigger.create({
       trigger: ".all-img-cinq",
       endTrigger: "#fin",
@@ -96,7 +101,7 @@ gsap.to(".lapin", {
         }
       },
     });
-     }
+     }*/
 });
 
 /*gsap.to(".lapin", {
@@ -164,21 +169,6 @@ window.addEventListener("click", function () {
  });*/
 
 
-/*gsap.to(".boule", { 
-  scrollTrigger: {
-  trigger: '#trois',
-  scrub: true,
-  markers: true,
-   x: 1550,
-  duration: 3,
-  rotation: 360,
-  ease: "power1.inOut",
-  /*yoyo: true,*//*
-start: 'left 50%',
-end: 'right 50%'
-},
-});*/
-
 /* Animation Chapitre 2*/
 gsap.to('.boulebig', {
   xPercent: 900,
@@ -240,6 +230,27 @@ gsap.to('.boule', {
 });
 
 /*Animation chapitre 5*/
+var mouv = gsap.timeline(".all-img-cinq",{
+  cale:0.5,
+  ease: "power1.inOut",
+  motionPath: {
+    path: "#path",
+    align: "#path",
+    autoRotate: true,
+    alignOrigin: [0.0, 0.6],
+    start: 0.6,
+    end: 1,
+    autoRotate: 0,
+  },
+  scrollTrigger: {
+    trigger: ".lapin",
+    end: "+=10000",
+    scrub: true,
+    markers:false,
+    scrub: 1,
+  },
+   }
+);
 gsap.to(".all-img-cinq", {
   scale:0.5,
   ease: "power1.inOut",
@@ -247,6 +258,7 @@ gsap.to(".all-img-cinq", {
     path: "#path",
     align: "#path",
     autoRotate: true,
+    alignOrigin: [0.0, 0.6],
     start: 0.6,
     end: 1,
     autoRotate: 0,
@@ -259,6 +271,11 @@ gsap.to(".all-img-cinq", {
     scrub: 1,
   },
 });
+
+
+
+
+
  /*gsap.to(".all-img-cinq", {
   /* backgroundPosition: "120px center",*/
  /* x:900,
