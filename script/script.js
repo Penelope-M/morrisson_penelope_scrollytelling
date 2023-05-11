@@ -66,21 +66,22 @@ gsap.to(".arrow", {
 })*/
 /*gsap.set(".lapin", {scale: 0.5, autoAlpha: 1});*/
 
-gsap.to("#lapin", {
+gsap.to(".lapin", {
 
-  ease: "bounce.in",
- 
+ease:'none',
+ scale:0.5,
+ delay:1,
   motionPath: {
     path: "#path",
     align: "#path",
     autoRotate: true,
-    alignOrigin: [0.0, 0.9],
+    alignOrigin: [0.0, 1.0],
     autoRotate: true,
     
   },
   scrollTrigger: {
-    trigger: "#debut",
-    end: "+=10000",
+    trigger: "#lapin",
+    end: "+=8000",
     scrub: true,
    pinSpacing: false,
  
