@@ -111,10 +111,10 @@ ease:'none',
 /*MotionPathHelper.create(".lapin");*/
 
 
-gsap.set(["#etoiler", "#pensette", "#bulle1", "#bulle2", "#bulle3"], { drawSVG: "0% 0%" });
+gsap.set(["#etoiler", "#pensette", "#bulle1", "#bulle2", "#bulle3"],{ drawSVG: "0% 0%" });
 function anim() {
-  gsap.timeline(),
-    gsap.to(
+  gsap.timeline()
+    .fromTo(
       "#pensette",
       {
         drawSVG: "0% 0%"
@@ -124,7 +124,7 @@ function anim() {
         duration: 1
       }
     )
-  gsap.to(
+    .fromTo(
     "#etoiler",
     {
       drawSVG: "0% 0%"
@@ -134,8 +134,38 @@ function anim() {
       duration: 1
     }
   )
-  gsap.to(
-    ["#etoiler", "#pensette", "#bulle1", "#bulle2", "#bulle3"],
+  .fromTo(
+    "#bulle1",
+    {
+      drawSVG: "0% 0%"
+    },
+    {
+      drawSVG: "0% 100%",
+      duration: 1
+    }
+  )
+  .fromTo(
+    "#bulle2",
+    {
+      drawSVG: "0% 0%"
+    },
+    {
+      drawSVG: "0% 100%",
+      duration: 1
+    }
+  )
+  .fromTo(
+    "#bulle3",
+    {
+      drawSVG: "0% 0%"
+    },
+    {
+      drawSVG: "0% 100%",
+      duration: 1
+    }
+  )
+  .fromTo(
+    ["#pensette","#etoiler","#bulle1", "#bulle2", "#bulle3"],
     {
       fillOpacity: 0
     },
@@ -219,7 +249,19 @@ gsap.to('.boule', {
     end: '+=5000',
   }
 });
-
+gsap.to('.main', {
+  x: '600',
+delay: 0.5,
+  scrollTrigger: {
+    trigger: '#quatre',
+    scrub: true,
+    markers: false,
+    pin: true,
+    pinSpacing: false,
+    toggleActions: 'restart complete reverse reset',
+    end: '+=5000',
+  }
+});
 /*Animation chapitre 5*/
 
 gsap.to(".all-img-cinq", {
