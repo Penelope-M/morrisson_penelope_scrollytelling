@@ -68,7 +68,7 @@ gsap.to(".arrow", {
 
 gsap.to("#lapin", {
   duration:0.5,
-  ease: "none",
+  ease: "bounce.in",
   motionPath: {
     path: "#path",
     align: "#path",
