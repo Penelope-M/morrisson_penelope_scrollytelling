@@ -70,13 +70,15 @@ gsap.to(".lapin", {
 
 ease:'none',
  scale:0.5,
- delay:1,
+ 
   motionPath: {
     path: "#path",
     align: "#path",
     autoRotate: true,
-    alignOrigin: [0.0, 1.0],
+    alignOrigin: [0.6, 1.1],
     autoRotate: true,
+    start: 0.00,
+    end: 1.,
     
   },
   scrollTrigger: {
@@ -222,7 +224,6 @@ gsap.to('.boule', {
 
 gsap.to(".all-img-cinq", {
   scale:0.5,
-  
   ease: "sine.in",
   motionPath: {
     path: "#path",
@@ -230,7 +231,7 @@ gsap.to(".all-img-cinq", {
     autoRotate: true,
     alignOrigin: [0.0, 0.6],
     start: 0.65,
-    end: 1,
+    end: 1.,
     autoRotate: 0,
   },
   scrollTrigger: {
