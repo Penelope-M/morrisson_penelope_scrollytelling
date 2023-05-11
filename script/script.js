@@ -67,8 +67,8 @@ gsap.to(".arrow", {
 /*gsap.set(".lapin", {scale: 0.5, autoAlpha: 1});*/
 
 gsap.to("#lapin", {
-  
-
+  duration:0.5,
+  ease: "none",
   motionPath: {
     path: "#path",
     align: "#path",
