@@ -213,11 +213,13 @@ width: 100vw;
   overflow: visible;
   height: 100%;
 
+z-index: 9999;
+ 
 
 }
 #motionPath path {
   stroke-width: 2;
-  stroke: gray;
+  stroke: rgb(230, 224, 224);
  
 }
 #motionPath .main {
