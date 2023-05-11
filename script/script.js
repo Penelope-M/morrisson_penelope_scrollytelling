@@ -66,9 +66,10 @@ gsap.to(".arrow", {
 })*/
 /*gsap.set(".lapin", {scale: 0.5, autoAlpha: 1});*/
 
-gsap.to(".lapin", {
+gsap.to("#lapin", {
  /* scale: 0.5,*/
- 
+ duration:1,
+ ease:'sine.in',
   motionPath: {
     path: "#path",
     align: "#path",
@@ -81,33 +82,12 @@ gsap.to(".lapin", {
     trigger: "#debut",
     end: "+=10000",
     scrub: true,
-    pinSpacing: false,
-   start:0,
-   end:0.6,
+   pinSpacing: false,
+ 
   },
   
 });
-gsap.fromTo(".lapin", {
-  scale: 0.5,
-   
-   motionPath: {
-     path: "#path",
-     align: "#path",
-     autoRotate: true,
-     alignOrigin: [0.0, 0.9],
-     autoRotate: true,
-     start:0.6,
-     end:1,
-   },
-   scrollTrigger: {
-     trigger: "#debut",
-     end: "+=10000",
-     scrub: true,
-     pinSpacing: false,
-   
-   },
-   
- });
+
 
 
 // crée un ScrollTrigger pour définir le point de défilement où l'élément deviendra fixe
@@ -238,30 +218,10 @@ gsap.to('.boule', {
 });
 
 /*Animation chapitre 5*/
-var mouv = gsap.timeline(".all-img-cinq",{
-  cale:0.5,
-  ease: "power1.inOut",
-  motionPath: {
-    path: "#path",
-    align: "#path",
-    autoRotate: true,
-    alignOrigin: [0.0, 0.6],
-    start: 0.6,
-    end: 1,
-    autoRotate: 0,
-  },
-  scrollTrigger: {
-    trigger: ".lapin",
-    end: "+=10000",
-    scrub: true,
-    markers:false,
-    scrub: 1,
-  },
-   }
-);
+
 gsap.to(".all-img-cinq", {
   scale:0.5,
-  ease: "power1.inOut",
+  ease: "none",
   motionPath: {
     path: "#path",
     align: "#path",
@@ -272,7 +232,7 @@ gsap.to(".all-img-cinq", {
     autoRotate: 0,
   },
   scrollTrigger: {
-    trigger: ".lapin",
+    trigger: "#lapin",
     end: "+=10000",
     scrub: true,
     markers:false,
