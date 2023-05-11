@@ -65,6 +65,7 @@ gsap.to(".arrow", {
  duration: 10,
 })*/
 /*gsap.set(".lapin", {scale: 0.5, autoAlpha: 1});*/
+let animation=
 gsap.to(".lapin", {
   scale: 0.5,
   ease: "power1.inOut",
@@ -74,8 +75,6 @@ gsap.to(".lapin", {
     autoRotate: true,
     alignOrigin: [0.0, 0.9],
     autoRotate: true,
-    start: 0.6,
-    end: 1,
   },
   scrollTrigger: {
     trigger: "#debut",
@@ -84,26 +83,10 @@ gsap.to(".lapin", {
     pin:true,
   },
   
- /* onUpdate: () => {
-    ScrollTrigger.create({
-      trigger: ".all-img-cinq",
-      endTrigger: "#fin",
-      scrub: true,
-      markers: false,
-      toggleActions: "restart complete reverse reset",
-      onUpdate: (self) => {
-        // Vérifier si l'élément ".lapin" est en vue
-        if (self.isActive) {
-          gsap.to(".lapin", {
-            scale: 0.5,
-            ease: "none",
-          });
-        }
-      },
-    });
-     }*/
 });
-
+window.addEventListener("scroll", () => 
+          
+animation.start());gsap.set(".lapin", { position: "fixed" }),  
 /*gsap.to(".lapin", {
   duration: 5, 
   ease: "power1.inOut",repeat: -1,
