@@ -64,10 +64,10 @@ gsap.to(".arrow", {
 
  duration: 10,
 })*/
-/*gsap.set(".lapin", {scale: 0.5, autoAlpha: 1});*/gsap.set(".lapin", { position: "sticky", });
-let animation=
+/*gsap.set(".lapin", {scale: 0.5, autoAlpha: 1});*/
+
 gsap.to(".lapin", {
-  scale: 0.5,
+ /* scale: 0.5,*/
   ease: "power1.inOut",
   motionPath: {
     path: "#path",
@@ -79,14 +79,12 @@ gsap.to(".lapin", {
   scrollTrigger: {
     trigger: "#debut",
     end: "+=10000",
-    scrub: 1,
-    pin:'.lapin',
+    scrub: true,
+   
   },
   
 });
-window.addEventListener("scroll", () => 
-          
-animation.start());
+
 
 
 // crée un ScrollTrigger pour définir le point de défilement où l'élément deviendra fixe
