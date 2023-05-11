@@ -68,23 +68,46 @@ gsap.to(".arrow", {
 
 gsap.to(".lapin", {
  /* scale: 0.5,*/
-  ease: "power1.inOut",
+ 
   motionPath: {
     path: "#path",
     align: "#path",
     autoRotate: true,
     alignOrigin: [0.0, 0.9],
     autoRotate: true,
+
   },
   scrollTrigger: {
     trigger: "#debut",
     end: "+=10000",
     scrub: true,
-   
+    pinSpacing: false,
+   start:0,
+   end:0.6,
   },
   
 });
-
+gsap.fromTo(".lapin", {
+  scale: 0.5,
+   
+   motionPath: {
+     path: "#path",
+     align: "#path",
+     autoRotate: true,
+     alignOrigin: [0.0, 0.9],
+     autoRotate: true,
+     start:0.6,
+     end:1,
+   },
+   scrollTrigger: {
+     trigger: "#debut",
+     end: "+=10000",
+     scrub: true,
+     pinSpacing: false,
+   
+   },
+   
+ });
 
 
 // crée un ScrollTrigger pour définir le point de défilement où l'élément deviendra fixe
