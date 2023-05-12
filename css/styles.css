@@ -315,15 +315,15 @@ width: 100vw;
   position: absolute;
   left: 40%;
 }
-#Carre_rectangle{
+#bizzare{
   width:181px ;
   height:170px;
   position: absolute;
   left: 40%;
-}
-#Carre_rectangle,#boboule{
   visibility:hidden;
 }
+
+
 #cinq img.avion_front{
   width: 37vw;
   transform: translate(22%, -91%);

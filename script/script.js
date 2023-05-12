@@ -251,17 +251,18 @@ gsap.to(".all-img-cinq", {
     scrub: 1,
   },
 });
-let circle = document.querySelector("#boboule");
 
 
-let time = gsap.timeline({ defaults: { duration: 1 } })
-  .to(circle, { morphSVG: "#Carre_rectangle" }, "+=1")
-  .to(circle, { morphSVG: cercle }, "+=1");
+let circle = gsap.to(".cercle2", { 
+  morphSVG: "#fugue"
+});
 
 document.addEventListener("click", function () {
   console.log("reset");
-  time.progress(0).pause();
-  time.play();
+  circle.progress(0).pause();
+  const Timeout = setTimeout(function () {
+  circle.play();
+}, 1000);
 });
 
  
