@@ -6,11 +6,17 @@ rapport-optimisation.md
 ## Problème #1
 ### Image trop lourde
 ### Action concrète pour le résoudre: Dimensionnez=les images de taille appropriée sur photoshop afin de réduire le temps de chargement. Par exemple ce image dans le dossier est celle qui est la plus lourde …img/img_arriere_plan/ciel.png , la taille de transfert est 8851,8Kib ce qui est énorme alors que le totale des images est 18519,7Kib.
+### Résultat: Je n'ai pas réussis à réssoudre le problème par manque de temps.
 
 ## Problème #2
 ### Format d'image trop lourde
 ### Action concrète pour le résoudre: Diffusez des images aux formats nouvelles génération tels que WebP ry AVIF car ils proposent une meilleur compression que png et jpeg. Par exemple le fichier dans le dossiez img_personnages/output-onlinegiftools.png prologe de 10,16s, une meilleure compression economises de nombreuses secondes.
+### Résultat: Je n'ai pas réussis à réssoudre le problème par manque de temps.
+
 
 ## Problème #3
 ### Les éléments d'image ne possèdent pas de width ni de height précise
-### Action concrète pour le résoudre: Indiquez une largeur et une hauteur sur les éléments d'images afin de faire une économies de temps pour appercevoir la mise en page
+### Action concrète pour le résoudre: Indiquez une largeur et une hauteur sur les éléments d'images (ajout de propriétés css width et height) afin de faire une économies de temps pour appercevoir la mise en page
+### Résultat: Je n'ai pas réussis à réssoudre le problème par manque de temps.
+
+# Rapport  projet ScrollyTelling après Optimisation
