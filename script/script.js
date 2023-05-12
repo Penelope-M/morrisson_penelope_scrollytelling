@@ -91,112 +91,21 @@ ease:'none',
   
 });
 
+gsap.set("#Staroff",{drawSVG:"0% 0%"});
 
-
-// crée un ScrollTrigger pour définir le point de défilement où l'élément deviendra fixe
-
-/*gsap.to(".lapin", {
-  duration: 5, 
-  ease: "power1.inOut",repeat: -1,
-  yoyo: true,
-  /*immediateRender: true,*//*
-  motionPath: {
-    path: "#path",
-    align: "#path",
-    alignOrigin: [0.5, 0.5],
-    autoRotate: 90
-  }
-});*/
-
-/*MotionPathHelper.create(".lapin");*/
-var tl = gsap.timeline();
-tl.from(".dessine-moi", {
-  duration:1, 
-  stagger: 0.1, 
-  drawSVG: 0
-})
-window.addEventListener("click", function () {
-  tl.play();
-});
-/*gsap.set(["#etoiler", "#pensette", "#bulle1", "#bulle2", "#bulle3"],{ drawSVG: "0% 0%" });
 function anim() {
-  gsap.timeline()
-    .fromTo(
-      "#pensette",
-      {
-        drawSVG: "0% 0%"
-      },
-      {
-        drawSVG: "0% 100%",
-        duration: 1
-      }
-    )
-    .fromTo(
-    "#etoiler",
+  gsap.to(
+    "#Staroff",
     {
-      drawSVG: "0% 0%"
-    },
-    {
-      drawSVG: "0% 100%",
-      duration: 1
-    }
-  )
-  .fromTo(
-    "#bulle1",
-    {
-      drawSVG: "0% 0%"
-    },
-    {
-      drawSVG: "0% 100%",
-      duration: 1
-    }
-  )
-  .fromTo(
-    "#bulle2",
-    {
-      drawSVG: "0% 0%"
-    },
-    {
-      drawSVG: "0% 100%",
-      duration: 1
-    }
-  )
-  .fromTo(
-    "#bulle3",
-    {
-      drawSVG: "0% 0%"
-    },
-    {
-      drawSVG: "0% 100%",
-      duration: 1
-    }
-  )
-  .fromTo(
-    ["#pensette","#etoiler","#bulle1", "#bulle2", "#bulle3"],
-    {
-      fillOpacity: 0
-    },
-    {
-      fillOpacity: 1,
-      duration: 1
+      drawSVG:"0% 100%", 
+      duration:1, 
+      ease:"power1.inOut"
     }
   );
-};
-const dep = document.querySelector("#debut");
-dep.addEventListener("click", anim);
-*/
-/*let anim= gsap.to("#pense", {
-  morphSVG: "#etoile"
-});
-window.addEventListener("click", function () {
-  console.log("reset");
-  anim.progress(0).pause();
-   const myTimeout = setTimeout(function () {
-     anim.play();
-   }, 1000);
- });*/
+}
+window.addEventListener("click", anim) 
 
-
+;
 /* Animation Chapitre 2*/
 gsap.to('.boulebig', {
   xPercent: 900,
