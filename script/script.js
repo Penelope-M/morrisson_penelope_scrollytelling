@@ -52,19 +52,6 @@ gsap.to(".arrow", {
 
 /*Animation Chapitre 1*/
 
-/*let animation =gsap.to(".bulle1", {
-  motionPath: {
- align: "#vallon",
- path: "#vallon",
- start: 0,
- end: 1,
- alignOrigin: [0.5, 0.9],
- autoRotate: true,
- },
-
- duration: 10,
-})*/
-/*gsap.set(".lapin", {scale: 0.5, autoAlpha: 1});*/
 
 gsap.to(".lapin", {
 
@@ -241,21 +228,6 @@ ScrollTrigger.create({
     tl.resume(); 
   }
 });
-/*const livre = document.querySelector('.livre_devant');
-const sectionAnimation = gsap.to(section, { opacity: 1, duration: 1 });
-
-const sectionTimeline = gsap.timeline({
-  opacity:0,
-  scrollTrigger: {
-    trigger: '#lapin',
-    scrub: true,
-    pin: true,
-    end:'+=10000',
-    anticipatePin: 1,
-  },
-});
-
-sectionTimeline.add(sectionAnimation);*/
 
 /*Animation chapitre 5*/
 
@@ -279,8 +251,6 @@ gsap.to(".all-img-cinq", {
     scrub: 1,
   },
 });
-
-
 
 
 
@@ -330,7 +300,7 @@ gsap.to(".lune", {
 
 gsap.to("#parallax-bg-3", {
   backgroundSize: "200%",
-  scale:1.45,
+  scale:1.40,
   ease: "none",
   scrollTrigger: {
     trigger: "#fin",
@@ -339,6 +309,18 @@ gsap.to("#parallax-bg-3", {
     markers: false,
   }
 });
+gsap.to("#parallax-bg-2", {
+
+  scale:1.45,
+   ease: "none",
+   scrollTrigger: {
+     trigger: "#fin",
+     end: '+=9000',
+     scrub: true,
+     markers: false,
+     toggleActions: 'restart complete reverse reset',
+   },
+ });
 gsap.to("#parallax-bg-1", {
  /* backgroundPosition: "120px center",*/
  scale:1.5,

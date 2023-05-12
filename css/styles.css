@@ -363,6 +363,22 @@ width: 100vw;
   z-index: 1;
 }
 
+#parallax-bg-2{
+  background-image: url(../img/img_elements_visuels/luna.svg);
+  background-size: cover; 
+  width: 8vw;
+  height: 8vh;
+  max-width: 100px;
+ position: absolute;
+ top: 64%;
+ left:110%;
+  transform: translate(-140%, -620%);
+  background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 50% 100%;
+  border: 1px solid rgb(4, 0, 255);
+  z-index: 2;
+}
 /*#fin img.ciel{
   transform: translate(100%, -35%);
   width: 24vw;
@@ -370,13 +386,13 @@ width: 100vw;
   object-fit:contain;
   border: 1px solid rgb(4, 0, 255);
 }*/
-#fin img.lune{
+/*#fin img.lune{
   transform: translate(-140%, -620%);
   width: 8vw;
   max-width: 100px;
-  z-index: 2;
-  /*border: 1px solid rgb(217, 255, 0);*/
-}
+  z-index: 2;*/
+  /*border: 1px solid rgb(217, 255, 0);
+}*/
 #fin .all-img-six{
   position:absolute;
   left: 55vh;
