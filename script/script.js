@@ -220,7 +220,7 @@ function anim() {
       strokeOpacity: 1,
       duration: 1
     }
-  );
+  )
 }
 let tl;
 
@@ -235,12 +235,13 @@ ScrollTrigger.create({
     tl.resume(); 
   }
 });
-const section = document.querySelector('#quatre');
+const livre = document.querySelector('.livre_devant');
 const sectionAnimation = gsap.to(section, { opacity: 0, duration: 1 });
 
 const sectionTimeline = gsap.timeline({
+  
   scrollTrigger: {
-    trigger: '#quatre',
+    trigger: '.all-img-cinq',
     scrub: true,
     pin: true,
     anticipatePin: 1,
