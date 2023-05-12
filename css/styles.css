@@ -151,7 +151,7 @@ width: 100vw;
   display: inline-block;
   width: 40vw; 
   max-width: 500px;
-  border: 1px solid blue;
+ /* border: 1px solid blue;*/
   background-size: 1000% 100%;
   aspect-ratio: 1071/603;
   /* Styles pour l'image d'arrière plan */
@@ -168,30 +168,7 @@ width: 100vw;
   to { background-position: -1000% 0; } 
 } 
 
-/*Animation main*/
-.main { 
-  width: 55vw;
-  max-width: 650px;
-  border: 1px solid green;
-  background-size: 4900% 100%;
-  aspect-ratio: 1007/566;
-  /* Styles pour l'image d'arrière plan */
-   background-image: url('../img/img_personnages/output-onlinegiftools.png');
-  /* Styles pour l'animation */
-  animation-name: flote;
-  animation-duration: 1.5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: steps(49);
-  animation-play-state: paused;
-  /* Note: La feuille de sprite contient 70 images-clés, donc 70 steps */
-  animation-play-state: paused;
-}
- @keyframes flote {
-  from { background-position: 0 0; }
-  to { background-position: 4900% 0; } 
- /* Note: 70 images x 600px = 24500px */
- 
-}
+
 
 
 .lapin {
@@ -205,9 +182,7 @@ width: 100vw;
 .is-scrolling .lapin{
   animation-play-state: running;
 }
-.is-scrolling .main{
-  animation-play-state: running;
-}
+
 
 #motionPath {
   overflow: visible;
@@ -215,7 +190,7 @@ width: 100vw;
 }
 #motionPath path {
   stroke-width: 2;
-  stroke: rgb(99, 98, 98);
+  /*stroke: rgb(99, 98, 98);*/
  
 }
 #motionPath .main {
@@ -261,7 +236,7 @@ width: 100vw;
   bottom: 12vh; 
   left: 50vw; 
   transform: translate(-10%, -20%);
-  border: 1px solid red;
+ /* border: 1px solid red;*/
   width: 50vw;
   max-width: 600px;
 }
@@ -292,9 +267,34 @@ width: 100vw;
   max-width: 110px;
   bottom: 35vh; 
   z-index: 2; 
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
-
+/*Animation main*/
+.main { 
+  width: 55vw;
+  max-width: 650px;
+  /*border: 1px solid green;*/
+  background-size: 4900% 100%;
+  aspect-ratio: 1007/566;
+  /* Styles pour l'image d'arrière plan */
+   background-image: url('../img/img_personnages/output-onlinegiftools.png');
+  /* Styles pour l'animation */
+  animation-name: flote;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(49);
+  animation-play-state: paused;
+  /* Note: La feuille de sprite contient 70 images-clés, donc 70 steps */
+  animation-play-state: paused;
+}
+ @keyframes flote {
+  from { background-position: 0 0; }
+  to { background-position: 4900% 0; } 
+ /* Note: 70 images x 600px = 24500px */
+}
+.is-scrolling .main{
+  animation-play-state: running;
+}
 /*chapitre 4*/
 #quatre img{
   position:absolute;
@@ -302,13 +302,28 @@ width: 100vw;
   bottom: 4vh; 
   left: 55vw; 
   transform: translate(-10%, -20%);
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   max-width: 620px;
 }
 .livre_devant{
   opacity: 0;
 }
 /*chapitre 5*/
+#boboule{
+  width:181px ;
+  height:170px;
+  position: absolute;
+  left: 40%;
+}
+#Carre_rectangle{
+  width:181px ;
+  height:170px;
+  position: absolute;
+  left: 40%;
+}
+#Carre_rectangle,#boboule{
+  visibility:hidden;
+}
 #cinq img.avion_front{
   width: 37vw;
   transform: translate(22%, -91%);
@@ -321,7 +336,7 @@ width: 100vw;
   top: 76vh; 
   left: 49vw; 
   transform: translate(-10%, -20%);
-  border: 1px solid yellow;
+  /*border: 1px solid yellow;*/
   max-width: 600px;
   z-index: 2;
 }
@@ -343,9 +358,9 @@ width: 100vw;
   max-width: 290px;
   transform: translate(-5%, -135%);
   background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: 0% 50%;
-  border: 1px solid rgb(4, 0, 255);
+  background-attachment: scroll;
+  background-position: 0% 50%;
+  /*border: 1px solid rgb(4, 0, 255);*/
   z-index: 3;
 }
 
@@ -357,9 +372,9 @@ width: 100vw;
   max-width: 290px;
   transform: translate(-5%, -35%);
   background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: 25% 100%;
-  border: 1px solid rgb(4, 0, 255);
+  background-attachment: scroll;
+  background-position: 25% 100%;
+  /*border: 1px solid rgb(4, 0, 255);*/
   z-index: 1;
 }
 
@@ -369,30 +384,17 @@ width: 100vw;
   width: 8vw;
   height: 8vh;
   max-width: 100px;
- position: absolute;
- top: 64%;
- left:110%;
+  position: absolute;
+  top: 64%;
+  left:110%;
   transform: translate(-140%, -620%);
   background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: 50% 100%;
-  border: 1px solid rgb(4, 0, 255);
+  background-attachment: scroll;
+  background-position: 50% 100%;
+  /*border: 1px solid rgb(4, 0, 255);*/
   z-index: 2;
 }
-/*#fin img.ciel{
-  transform: translate(100%, -35%);
-  width: 24vw;
-  max-width: 280px;
-  object-fit:contain;
-  border: 1px solid rgb(4, 0, 255);
-}*/
-/*#fin img.lune{
-  transform: translate(-140%, -620%);
-  width: 8vw;
-  max-width: 100px;
-  z-index: 2;*/
-  /*border: 1px solid rgb(217, 255, 0);
-}*/
+
 #fin .all-img-six{
   position:absolute;
   left: 55vh;
@@ -408,18 +410,3 @@ width: 100vw;
   font-size: 1rem;
   margin: 4vw;
 }
-
-/*Paralaxe*/
-/*#parallax-bg-3{
-  background-image: url(/img/img_arriere_plan/ciel_petit.png);
-  background-size: cover;  /* ou 200% pour augmenter l'effet, si l'image originale est assez grande */
-  /*background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: 50% 50%;
-  
-  width: 24vw;
-  height: 40vh;
-  max-width: 280px;
- 
-  border: 1px solid rgb(4, 0, 255);
-}*/

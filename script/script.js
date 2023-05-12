@@ -251,36 +251,20 @@ gsap.to(".all-img-cinq", {
     scrub: 1,
   },
 });
+let circle = document.querySelector("#boboule");
 
 
+let time = gsap.timeline({ defaults: { duration: 1 } })
+  .to(circle, { morphSVG: "#Carre_rectangle" }, "+=1")
+  .to(circle, { morphSVG: cercle }, "+=1");
 
- /*gsap.to(".all-img-cinq", {
-  /* backgroundPosition: "120px center",*/
- /* x:900,
-  y:-500,*//*
-   ease: "none",
-   scrollTrigger: {
-     trigger: ".lapin",
-     end: '+=9000',
-     scrub: true,
-     markers:false,
-     toggleActions: 'restart complete reverse reset',
-   },*/
-   /*onUpdate: () => {
-    gsap.to(".all-img-cinq", {
-      /* backgroundPosition: "120px center",*/
-     /* scale:0.5,
-       ease: "none",
-       scrollTrigger: {
-         trigger: ".lapin",
-         end: '+=9000',
-         scrub: true,
-         markers: false,
-         toggleActions: 'restart complete reverse reset',
-       },
-     });
-  }
- });*/
+document.addEventListener("click", function () {
+  console.log("reset");
+  time.progress(0).pause();
+  time.play();
+});
+
+ 
 /*Animation chapitre 6*/
 
 gsap.to(".lune", {
