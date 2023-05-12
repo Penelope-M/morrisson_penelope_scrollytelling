@@ -141,15 +141,18 @@ gsap.to('.cadre', {
 gsap.to('.boule', {
   x: '800',
   rotation: '360',
+  duration: 5,
+  
   scrollTrigger: {
     trigger: '#trois',
-    scrub: true,
     markers: false,
     pin: true,
     pinSpacing: false,
     toggleActions: 'restart complete reverse reset',
     end: '+=5000',
+    animationDirection: "normal"
   }
+  
 });
 gsap.to('.main', {
   x: '600',
@@ -164,6 +167,9 @@ delay: 0.5,
     end: '+=5000',
   }
 });
+
+
+
 /*Animation chapitre 4*/
 gsap.set([".cercle", ".sourire", ".yeuxG", ".yeuxD"],{drawSVG:"0% 0%"});
 function anim() {
@@ -235,20 +241,21 @@ ScrollTrigger.create({
     tl.resume(); 
   }
 });
-const livre = document.querySelector('.livre_devant');
-const sectionAnimation = gsap.to(section, { opacity: 0, duration: 1 });
+/*const livre = document.querySelector('.livre_devant');
+const sectionAnimation = gsap.to(section, { opacity: 1, duration: 1 });
 
 const sectionTimeline = gsap.timeline({
-  
+  opacity:0,
   scrollTrigger: {
-    trigger: '.all-img-cinq',
+    trigger: '#lapin',
     scrub: true,
     pin: true,
+    end:'+=10000',
     anticipatePin: 1,
   },
 });
 
-sectionTimeline.add(sectionAnimation);
+sectionTimeline.add(sectionAnimation);*/
 
 /*Animation chapitre 5*/
 
@@ -313,6 +320,12 @@ gsap.to(".lune", {
   ease: "power1.inOut",
   repeat: -1,
   yoyo: true,
+  scrollTrigger: {
+    trigger: "#lapin",
+    end: '+=9000',
+   
+  }
+
 });
 
 gsap.to("#parallax-bg-3", {
