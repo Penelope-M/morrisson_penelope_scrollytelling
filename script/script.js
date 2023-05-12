@@ -228,8 +228,10 @@ const sectionQuatre = document.querySelector("#quatre");
 gsap.registerPlugin(ScrollTrigger);
 ScrollTrigger.create({
   trigger: sectionQuatre,
-
-  onEnter: () => anim() // Déclencher l'animation lorsque la section "quatre" est atteinte
+  onEnter: () => {
+    const tl = anim(); 
+    tl.repeat(-1);
+  },
 });
 
 /*Animation chapitre 5*/
