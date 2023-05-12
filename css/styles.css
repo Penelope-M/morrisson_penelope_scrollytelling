@@ -235,6 +235,11 @@ width: 100vw;
   left: 40%;
 }
 
+.cercle{
+  fill:#D9D9D9 ;
+  stroke:black ;
+  stroke-width:4px;
+}
 
 
 

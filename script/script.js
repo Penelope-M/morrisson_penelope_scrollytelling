@@ -198,6 +198,9 @@ delay: 0.5,
     end: '+=5000',
   }
 });
+/*Animation chapitre 4*/
+
+
 /*Animation chapitre 5*/
 
 gsap.to(".all-img-cinq", {
