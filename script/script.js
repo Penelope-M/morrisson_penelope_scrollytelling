@@ -172,7 +172,7 @@ function anim() {
     ".cercle",
      {
       drawSVG:"0% 0%",
-      strokeOpacity: 0,
+     
     },
     {
       drawSVG:"0% 100%",
@@ -186,7 +186,7 @@ function anim() {
     },
     {
       drawSVG:"0% 100%",
-      duration: 1
+      duration: 2
     }
   )
   .fromTo(
@@ -197,7 +197,7 @@ function anim() {
     },
     {
       strokeOpacity: 1,
-      duration: 1
+      duration: 1.5
     }
   )
   .fromTo(
@@ -222,16 +222,19 @@ function anim() {
     }
   );
 }
-const sectionQuatre = document.querySelector("#quatre");
 
+let tl;
 
 gsap.registerPlugin(ScrollTrigger);
 ScrollTrigger.create({
-  trigger: sectionQuatre,
+  trigger: '#quatre',
   onEnter: () => {
-    const tl = anim(); 
+     tl = anim(); 
     tl.repeat(-1);
   },
+  onEnterBack: () => {
+    tl.resume(); 
+  }
 });
 
 /*Animation chapitre 5*/
