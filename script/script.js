@@ -90,22 +90,42 @@ ease:'none',
   },
   
 });
-
-gsap.set("#Staroff",{drawSVG:"0% 0%"});
-
+/*
+gsap.set([".cerises", ".queue"],{drawSVG:"0% 0%"});
 function anim() {
-  gsap.to(
-    "#Staroff",
+  gsap.timeline()
+  .fromTo(
+    ".queue",
+     {
+      drawSVG:"0% 0%"
+    },
     {
-      drawSVG:"0% 100%", 
-      duration:1, 
-      ease:"power1.inOut"
+      drawSVG:"0% 100%",
+      duration: 1
+    }
+  )
+  .fromTo(
+    ".cerises",
+     {
+      drawSVG:"0% 0%"
+    },
+    {
+      drawSVG:"0% 100%",
+      duration: 1
+    }
+  )
+  .fromTo(
+    [".cerises", ".queue"],
+    {
+      fillOpacity: 0
+    },
+    {
+      fillOpacity: 1,
+      duration: 1
     }
   );
-}
-window.addEventListener("click", anim) 
+};*/
 
-;
 /* Animation Chapitre 2*/
 gsap.to('.boulebig', {
   xPercent: 900,

@@ -227,20 +227,13 @@ width: 100vw;
   position: absolute;
 }*/
 /*chapitre 1*/
-#template,
-#Staroff {
-  fill: none;
+
+#drawsvg{
+  width:181px ;
+  height:170px;
+  position: absolute;
+  left: 40%;
 }
-
-#Staroff {
-  stroke: #ff003a;
-  stroke-width: 20px;
-
-  stroke-dashoffset: 0.001;
-  stroke-dasharray: 0px, 999999px;
-}
-
-
 
 
 
