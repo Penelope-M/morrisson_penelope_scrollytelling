@@ -222,10 +222,9 @@ function anim() {
     }
   );
 }
-
 let tl;
 
-gsap.registerPlugin(ScrollTrigger);
+
 ScrollTrigger.create({
   trigger: '#quatre',
   onEnter: () => {
@@ -236,6 +235,19 @@ ScrollTrigger.create({
     tl.resume(); 
   }
 });
+const section = document.querySelector('#quatre');
+const sectionAnimation = gsap.to(section, { opacity: 0, duration: 1 });
+
+const sectionTimeline = gsap.timeline({
+  scrollTrigger: {
+    trigger: '#quatre',
+    scrub: true,
+    pin: true,
+    anticipatePin: 1,
+  },
+});
+
+sectionTimeline.add(sectionAnimation);
 
 /*Animation chapitre 5*/
 

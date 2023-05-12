@@ -305,7 +305,9 @@ width: 100vw;
   border: 1px solid red;
   max-width: 620px;
 }
-
+.livre_devant{
+  opacity: 0;
+}
 /*chapitre 5*/
 #cinq img.avion_front{
   width: 37vw;
