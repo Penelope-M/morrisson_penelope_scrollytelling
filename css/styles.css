@@ -240,9 +240,21 @@ width: 100vw;
   stroke:black ;
   stroke-width:4px;
 }
-
-
-
+.sourire{
+  stroke:black ;
+  stroke-width:3px;
+  stroke-linecap:"square";
+}
+.yeuxG{
+  stroke:black ;
+  stroke-width:3px;
+  stroke-linecap:"square";
+}
+.yeuxD{
+  stroke:black ;
+  stroke-width:3px;
+  stroke-linecap:"square";
+}
 /*chapitre 2*/
 #deux img{
   position:absolute;
