@@ -90,41 +90,7 @@ ease:'none',
   },
   
 });
-/*
-gsap.set([".cerises", ".queue"],{drawSVG:"0% 0%"});
-function anim() {
-  gsap.timeline()
-  .fromTo(
-    ".queue",
-     {
-      drawSVG:"0% 0%"
-    },
-    {
-      drawSVG:"0% 100%",
-      duration: 1
-    }
-  )
-  .fromTo(
-    ".cerises",
-     {
-      drawSVG:"0% 0%"
-    },
-    {
-      drawSVG:"0% 100%",
-      duration: 1
-    }
-  )
-  .fromTo(
-    [".cerises", ".queue"],
-    {
-      fillOpacity: 0
-    },
-    {
-      fillOpacity: 1,
-      duration: 1
-    }
-  );
-};*/
+
 
 /* Animation Chapitre 2*/
 gsap.to('.boulebig', {
@@ -199,7 +165,72 @@ delay: 0.5,
   }
 });
 /*Animation chapitre 4*/
+gsap.set([".cercle", ".sourire", ".yeuxG", ".yeuxD"],{drawSVG:"0% 0%"});
+function anim() {
+  gsap.timeline()
+  .fromTo(
+    ".cercle",
+     {
+      drawSVG:"0% 0%",
+      strokeOpacity: 0,
+    },
+    {
+      drawSVG:"0% 100%",
+      duration: 1
+    }
+  )
+  .fromTo(
+    [ ".sourire", ".yeuxG", ".yeuxD"],
+     {
+      drawSVG:"0% 0%"
+    },
+    {
+      drawSVG:"0% 100%",
+      duration: 1
+    }
+  )
+  .fromTo(
+    ".cercle",
+     {
+    
+      strokeOpacity: 0,
+    },
+    {
+      strokeOpacity: 1,
+      duration: 1
+    }
+  )
+  .fromTo(
+    ".cercle",
+     {
+    
+      fillOpacity: 0,
+    },
+    {
+      fillOpacity:1,
+      duration: 1
+    }
+  )
+  .fromTo(
+    [".sourire", ".yeuxG", ".yeuxD"],
+    {
+      strokeOpacity: 0,
+    },
+    {
+      strokeOpacity: 1,
+      duration: 1
+    }
+  );
+}
+const sectionQuatre = document.querySelector("#quatre");
 
+
+gsap.registerPlugin(ScrollTrigger);
+ScrollTrigger.create({
+  trigger: sectionQuatre,
+
+  onEnter: () => anim() // Déclencher l'animation lorsque la section "quatre" est atteinte
+});
 
 /*Animation chapitre 5*/
 
