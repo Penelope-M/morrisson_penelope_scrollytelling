@@ -109,9 +109,16 @@ ease:'none',
 });*/
 
 /*MotionPathHelper.create(".lapin");*/
-
-
-gsap.set(["#etoiler", "#pensette", "#bulle1", "#bulle2", "#bulle3"],{ drawSVG: "0% 0%" });
+var tl = gsap.timeline();
+tl.from(".dessine-moi", {
+  duration:1, 
+  stagger: 0.1, 
+  drawSVG: 0
+})
+window.addEventListener("click", function () {
+  tl.play();
+});
+/*gsap.set(["#etoiler", "#pensette", "#bulle1", "#bulle2", "#bulle3"],{ drawSVG: "0% 0%" });
 function anim() {
   gsap.timeline()
     .fromTo(
@@ -174,10 +181,10 @@ function anim() {
       duration: 1
     }
   );
-}
+};
 const dep = document.querySelector("#debut");
 dep.addEventListener("click", anim);
-
+*/
 /*let anim= gsap.to("#pense", {
   morphSVG: "#etoile"
 });

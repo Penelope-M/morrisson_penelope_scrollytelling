@@ -211,11 +211,7 @@ width: 100vw;
 
 #motionPath {
   overflow: visible;
- /* height: 100%;*/
-
-
- 
-
+ height: 100%;
 }
 #motionPath path {
   stroke-width: 2;
@@ -235,7 +231,7 @@ width: 100vw;
   position:absolute;
   transform: translate(130%, -20%);
   width: 40vw;
-
+  fill: #ff4d4c;
   bottom: 33vh; 
   border: 1px solid rgb(217, 255, 0);
 }
@@ -243,14 +239,20 @@ width: 100vw;
   fill: none;
   stroke: #000;
   stroke-miterlimit: 10;
+  color: #000000;
+  fill-opacity: 0;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  -inkscape-stroke: none;
+
 }
-#etoile{
+#etoiler{
   position:absolute;
   transform: translate(125%, -24%);
   width: 40vw;
   bottom: 33vh; 
   border: 1px solid rgb(217, 255, 0);
- 
+  fill: #999933;
 }
 
 
